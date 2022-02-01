@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Ansh
 - 🐍 I’m currently learning python
-- 📫 You can reach me at my email
+- 📧 You can reach me at my email
 
 <!---
 anshunderscore/anshunderscore is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

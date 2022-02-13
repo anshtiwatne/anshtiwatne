@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Ansh
-- ⌨️ I'm currently working on [an algorithm that can solve Wordle](https://github.com/anshunderscore/wordle-solver)
+- ⌨️ I'm not really working on anything right now
 - 🐍 I’m currently learning python
 - 📧 You can reach me at my email
 

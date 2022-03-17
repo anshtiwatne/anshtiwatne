@@ -12,11 +12,11 @@
 
 - [Getting started with Google Workspace Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/6T9A9KYP8L8X)
 
-# Wordle Solving Algorithm
+# Projects
 
-- [Detailed Blog](https://ansht.stck.me/post/16674/Hello-Wordle)
+- [Wordle Solving Algorithm](https://ansht.stck.me/post/16674/Hello-Wordle)
 
-- [Code](https://github.com/anshunderscore/wordle-solver)
+- [Wikipedia Philosophy Crawler](https://github.com/anshunderscore/philosophy-wikicrawl)
 
 # Web Profiles
 

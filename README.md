@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Ansh
-- ⌨️ I'm not really working on anything right now
-- 🐍 I’m currently learning JS
+- ⌨️ I'm working on building a raspi drone to use image recognition
+- 🍵 I’m currently learning JS
 - 📧 You can reach me at my email
 
 <!---

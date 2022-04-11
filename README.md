@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Ansh
-- ⚒️ I'm not really working on anything
+- ⚒️ I'm not really working on a tictactoe AI
 - 🍵 I’m currently learning JS
 - 📧 You can reach me at my email
 

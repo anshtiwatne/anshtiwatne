@@ -15,8 +15,9 @@
 # Projects
 
 - [Wordle Solving Algorithm](https://ansht.stck.me/post/16674/Hello-Wordle)
-
+- [WhatsApp Chat Statistics App](https://github.com/anshunderscore/chat-analyzer)
 - [Wikipedia Philosophy Crawler](https://github.com/anshunderscore/philosophy-wikicrawl)
+- All other projects [right here on GitHub](https://github.com/anshunderscore?tab=repositories)
 
 # Web Profiles
 

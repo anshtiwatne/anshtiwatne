@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Ansh
 - ⚒️ I'm not really working on anything
-- 🍵 I’m currently learning JS
+- 🐦 I’m currently learning flutter
 - 📧 You can reach me at my email
 
 <!---

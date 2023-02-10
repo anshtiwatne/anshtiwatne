@@ -1,6 +1,3 @@
-# Case Studies
-<br>
-
 ## Theme 1
 ### 1.1 **Population Dynamics**
 - Overpopulation: Bangladesh
@@ -22,8 +19,6 @@
 ### 1.7 **Urbanization**
 - Rapid urban growth: Rio de Janeiro, Brazil
 
-<br>
-
 ## Theme 2
 ### 2.1 **Earthquakes and volcanoes**
 - Earthquake: Christchurch, New Zealand
@@ -37,8 +32,6 @@
 ### 2.4 **Climate and natural vegetation**
 - Tropical rainforest: The Amazon Rainforest
 - Hot desert: The Thar Desert: Rajasthan, India
-
-<br>
 
 ## Theme 3
 ### 3.1 **Development**

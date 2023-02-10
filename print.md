@@ -1,4 +1,3 @@
-## Theme 1
 ### 1.1 **Population Dynamics**
 - Overpopulation: Bangladesh
 - Underpopulation: Australia
@@ -19,7 +18,7 @@
 ### 1.7 **Urbanization**
 - Rapid urban growth: Rio de Janeiro, Brazil
 
-## Theme 2
+---
 ### 2.1 **Earthquakes and volcanoes**
 - Earthquake: Christchurch, New Zealand
 - Volcano: Eyjafjallajökull (E15), Iceland
@@ -33,7 +32,7 @@
 - Tropical rainforest: The Amazon Rainforest
 - Hot desert: The Thar Desert: Rajasthan, India
 
-## Theme 3
+---
 ### 3.1 **Development**
 - TNC and its global links: Walmart
 ### 3.2 **Food Production**

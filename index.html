@@ -85,7 +85,7 @@
   </header>
 
   <div id="about">
-    <h1 id="greeting"></h1>
+    <h1 id="greeting-placeholder">👋</h1>
     <p>I'm a high school student at <a href="https://dlrc.in/">DLRC</a>, with a keen interest for computer science and physics. I enjoy coding, especially problem solving as well and open source software.</p>
     <p>You can find all of my projects hosted on <a href="https://github.com/anshunderscore">Github</a> and read my blog on <a href="https://ansht.stck.me/">ScrollStack</a>. You can follow me on <a href="https://twitter.com/ansht_">Twitter</a>. Reach out to me by <a href="mailto:ansh.tiwatne@gmail.com">email</a> if you wish to contact me.</p>
     <p><div class="aboutSubheader">EXPERIENCE</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Nam ac felis ultrices, luctus ipsum vel, tincidunt massa. Suspendisse posuere, ex quis consequat vehicula, dui tellus placerat ante, vel gravida tellus felis eu sapien. Sed euismod ornare est, vel euismod lacus molestie ac.</p>
@@ -101,10 +101,10 @@
 <script>
   let i = 0
   const duration = 50
-  const txt = "👋 Hi, I'm Ansh"
+  const txt = " Hi, I'm Ansh"
 
   function typeWriter() {
-    let element = document.getElementById("greeting")
+    let element = document.getElementById("greeting-placeholder")
     if (i < txt.length) {
       element.innerHTML += txt.charAt(i)
       i++; setTimeout(typeWriter, duration)

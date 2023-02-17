@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>👋</text></svg>">
+  <script src="https://kit.fontawesome.com/9401ee056a.js" crossorigin="anonymous"></script>
   <title>Ansh Tiwatne</title>
 </head>
 
@@ -15,7 +17,7 @@
     --bg-color: #1a1b1e;
     --text-color: whitesmoke;
     --link-color: #58a6ff;
-    --header-text-color: lightgray;
+    --grayed-text-color: lightgray;
   }
 
   body {
@@ -29,16 +31,29 @@
   }
 
   header {
-    color: lightgray;
+    color: var(--grayed-text-color);
     letter-spacing: 1px;
     margin-bottom: 8rem;
   }
 
+  header a:hover {
+    text-decoration: none;
+  }
+
   footer {
-    color: lightgray;
+    color: var(--grayed-text-color);
     letter-spacing: 1px;
     padding-top: 1rem;
     padding-bottom: 3rem;
+  }
+
+  footer a {
+    color: var(--grayed-text-color);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: none;
   }
 
   h1 {
@@ -59,7 +74,7 @@
   }
 
   span a {
-    color: var(--header-text-color);
+    color: var(--grayed-text-color);
     text-decoration: none;
   }
 
@@ -94,7 +109,13 @@
 
   <footer>
     <span>© Ansh Tiwatne</span>
-    <span>SOCIAL LINKS</span>
+    <span>
+      <a href="https://twitter.com/ansht_" class="fa-brands fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/ansht/" class="fa-brands fa-linkedin"></a>
+      <a href="https://www.instagram.com/anshunderscore/" class="fa-brands fa-instagram"></a>
+      <a href="https://github.com/anshunderscore" class="fa-brands fa-github"></a>
+      <a href="mailto:ansh.tiwatne@gmail.com" class="fa-solid fa-envelope"></a>
+    </span>
   </footer>
 
 </body>

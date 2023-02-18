@@ -15,12 +15,21 @@
 
 <style>
   :root {
+    --bg-color: white;
+    --text-color: #24292f;
+    --link-color: #58a6ff;
+    --grayed-text-color: #6e7781;
+  }
+
+  @media (prefers-color-scheme: dark) {
+  :root {
     color-scheme: dark;
     --bg-color: #1a1b1e;
     --text-color: whitesmoke;
     --link-color: #58a6ff;
     --grayed-text-color: lightgray;
   }
+}
 
   body {
     background-color: var(--bg-color);

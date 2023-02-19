@@ -3,121 +3,73 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="content-language" content="en">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/83647366?v=4"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>👋</text></svg>">
   <script src="https://kit.fontawesome.com/9401ee056a.js" crossorigin="anonymous"></script>
+  
+  <!-- Primary Meta Tags -->
   <title>Ansh Tiwatne</title>
+  <meta name="title" content="Ansh Tiwatne">
+  <meta name="description" content="My portfolio website — discover my intersests and explore my latest updates">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="Ansh Tiwatne">
+  <meta property="og:description" content="My portfolio website — discover my intersests and explore my latest updates">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/83647366?v=4">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="Ansh Tiwatne">
+  <meta property="twitter:description" content="My portfolio website — discover my intersests and explore my latest updates">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/83647366?v=4">
 </head>
 
 <style>
   :root {
-    --bg-color: white;
-    --text-color: #24292f;
-    --link-color: #58a6ff;
-    --grayed-text-color: #6e7781;
+    --bg-color: #FFFFFF;
+    --text-color: #24292F;
+    --link-color: #58A6FF;
+    --muted-text-color: #6E7781;
   }
-
   @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --bg-color: #1a1b1e;
-    --text-color: whitesmoke;
-    --link-color: #58a6ff;
-    --grayed-text-color: lightgray;
-  }
-}
+    --bg-color: #1A1B1E;
+    --text-color: #F5F5F5;
+    --link-color: #58A6FF;
+    --muted-text-color: #D3D3D3;
+  }}
 
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'JetBrains Mono', monospace;
-    margin: auto;
+    margin: 0 auto;
     max-width: 45rem;
-    padding: 3rem 1.5rem 0rem;
     line-height: 2.1rem;
   }
 
-  header {
-    color: var(--grayed-text-color);
-    letter-spacing: 1px;
-    margin-bottom: 8rem;
+  header, footer {
+    display: flex;
+    justify-content: space-between;
     max-width: 43rem;
-    margin: 0 auto 8rem;
-  }
-
-  header a:hover {
-    text-decoration: none;
-  }
-
-  footer {
-    color: var(--grayed-text-color);
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
     letter-spacing: 1px;
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    max-width: 43rem;
-    /* margin: 5rem auto 0; */
   }
 
-  footer a {
-    color: var(--grayed-text-color);
-    text-decoration: none;
-  }
-
-  footer a:hover {
-    text-decoration: none;
-  }
-
-  h1 {
-    padding-bottom: 1rem;
-  }
-
-  a {
+  .about a {
     color: var(--link-color);
     text-decoration: none;
   }
 
-  a:hover {
+  .about a:hover {
     text-decoration: underline;
-  }
-
-  p {
-    padding: 0.25rem, 0rem;
-  }
-
-  span a {
-    color: var(--grayed-text-color);
-    text-decoration: none;
-  }
-
-  span:first-child {
-    float: left;
-  }
-
-  span:last-child {
-    float: right;
-  }
-
-  footer span:last-child {
-    font-size: larger;
-    letter-spacing: 0.25rem;
-  }
-
-  pre {
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    font-family: "JetBrains Mono";
-    font-size: small;
-  }
-
-  pre a:hover {
-    text-decoration: none;
   }
 
   .aboutSubheader {
@@ -125,39 +77,72 @@
     font-weight: bold;
     letter-spacing: 1px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
   }
+
+  .name {
+    color: var(--muted-text-color);
+    display: flex;
+  }
+
+  .links a{
+    text-decoration: none;
+    color: var(--muted-text-color);
+  }
+
+  .heading {
+    padding: 1rem 0;
+  }
+
+  .ascii-art {
+    line-height: normal;
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: small;
+    padding-top: 1rem;
+  }
+
+  .ascii-art a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  .social-icons {
+    font-size: larger;
+    letter-spacing: 0.25rem;
+  }
+
+  .social-icons a {
+    color: var(--muted-text-color);
+    text-decoration: none;
+  }
+
 </style>
 
 <body onload="typeWriter()">
 
   <header>
-    <span style="font-weight: bolder;">ANSH TIWATNE</span>
-    <span><a href="https://github.com/anshunderscore">Github</a> | <a href="https://drive.google.com/file/d/1pjiw06gkuEFIcHqhrxdylBFtcATy1qe1/">Resume</a></span></span>
+    <span class="name"><b>ANSH TIWATNE</b></span>
+    <nav class="links"><a href="https://github.com/anshunderscore">Github</a> | <a href="https://drive.google.com/file/d/1pjiw06gkuEFIcHqhrxdylBFtcATy1qe1/">Resume</a></nav>
   </header>
 
-  <div id="about">
-    <h1 id="greeting-placeholder">👋</h1>
-    <p>I'm a high school student at <a href="https://dlrc.in/">DLRC</a>, with a keen interest for computer science and physics. I enjoy coding, especially problem solving as well and open source software.</p>
-    <p><div class="aboutSubheader">⚒️ MY WORK</div>I'm constantly pursuing new projects that intrigue me, ranging from creating an <a href="https://ansht.stck.me/post/16674/Hello-Wordle">algorithm to solve Wordle</a> to <a href="https://github.com/anshunderscore/chat-analyzer">analyzing sentiment in WhatsApp chats</a>. You can find all of my endeavors on my <a href="https://github.com/anshunderscore">Github</a>, and explore some of my more interesting projects I've documented on my blog on <a href="https://ansht.stck.me/">ScrollStack</a>.</p>
-    <p><div class="aboutSubheader">🚀 LEARNING</div>I find great pleasure in expanding my coding skills by exploring new programming languages and frameworks. In pursuit of this, I have completed various <a href="https://github.com/anshunderscore/anshunderscore/blob/main/links.md">online courses</a> on platforms such as Coursera. In addition, I am deeply interested in the subject of physics, which I continue to study by reading books and taking online courses. It brings me joy to invest my time into learning new things.</p>
-    <p><div class="aboutSubheader">📧 REACH OUT</div>If you wish to reach out, you can <a href="mailto:ansh.tiwatne@gmail.com">email me</a> directly and I'll respond as soon as possible. Additionally, you can find me on <a href="https://www.linkedin.com/in/ansht/">LinkedIn</a>, where you can send me a message or connect with me. You can also follow me on <a href="https://twitter.com/ansht_">Twitter</a> where I am most active, to stay updated on my activities. Feel free to reach out through any of my socials below as well.</p>
-  </div>
-
-  <pre>
-    _____________             
-   < <a href="#top">back to top</a> >            
-    -------------             
-           \   ^__^           
-            \  (oo)\_______   
-               (__)\       )\/
-                   ||----w |  
-                   ||     ||  
- </pre>
+  <h1 class="heading" id="greeting-placeholder">👋  </h1>
+  <p class="about">I'm a high school student at <a href="https://dlrc.in/">DLRC</a>, with a keen interest for computer science and physics. I enjoy coding, especially problem solving as well and open source software.</p>
+  <div class="aboutSubheader">⚒️ MY WORK</div><p class="about">I'm constantly pursuing new projects that intrigue me, ranging from creating an <a href="https://ansht.stck.me/post/16674/Hello-Wordle">algorithm to solve Wordle</a> to <a href="https://github.com/anshunderscore/chat-analyzer">analyzing sentiment in WhatsApp chats</a>. You can find all of my endeavors on my <a href="https://github.com/anshunderscore">Github</a>, and explore some of my more interesting projects I've documented on my blog on <a href="https://ansht.stck.me/">ScrollStack</a>.</p>
+  <div class="aboutSubheader">🚀 LEARNING</div><p class="about">I find great pleasure in expanding my coding skills by exploring new programming languages and frameworks. In pursuit of this, I have completed various <a href="https://github.com/anshunderscore/anshunderscore/blob/main/links.md">online courses</a> on platforms such as Coursera. In addition, I am deeply interested in the subject of physics, which I continue to study by reading books and taking online courses. It brings me joy to invest my time into learning new things.</p>
+  <div class="aboutSubheader">📧 REACH OUT</div><p class="about">If you wish to reach out, you can <a href="mailto:ansh.tiwatne@gmail.com">email me</a> directly and I'll respond as soon as possible. Additionally, you can find me on <a href="https://www.linkedin.com/in/ansht/">LinkedIn</a>, where you can send me a message or connect with me. You can also follow me on <a href="https://twitter.com/ansht_">Twitter</a> where I am most active, to stay updated on my activities. Feel free to reach out through any of my socials below as well.</p>
+  <pre class="ascii-art">
+     _____________              
+    < <a href="#top">back to top</a> >             
+     -------------              
+            \   ^__^            
+             \  (oo)\_______    
+                (__)\       )\/\
+                    ||----w |   
+                    ||     ||   </pre>
 
   <footer>
-    <span>© Ansh Tiwatne</span>
-    <span>
+    <span class="name">© Ansh Tiwatne</span>
+    <span class="social-icons">
       <a href="https://twitter.com/ansht_" class="fa-brands fa-twitter"></a>
       <a href="https://www.linkedin.com/in/ansht/" class="fa-brands fa-linkedin"></a>
       <a href="https://www.instagram.com/anshunderscore/" class="fa-brands fa-instagram"></a>

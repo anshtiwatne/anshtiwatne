@@ -88,11 +88,16 @@
   .name {
     color: var(--muted-text-color);
     display: flex;
+    font-weight: bold;
   }
 
-  .links a{
+  .link a{
     text-decoration: none;
     color: var(--muted-text-color);
+  }
+
+  .link a:hover {
+    color: var(--link-color);
   }
 
   .heading {
@@ -127,8 +132,8 @@
 <body onload="typeWriter()">
 
   <header>
-    <span class="name"><b>ANSH TIWATNE</b></span>
-    <nav class="links"><a href="https://github.com/anshunderscore">Github</a> | <a href="https://drive.google.com/file/d/1pjiw06gkuEFIcHqhrxdylBFtcATy1qe1/">Resume</a></nav>
+    <span class="name link"><a href="https://www.ansht.me">ANSH TIWATNE</a></span>
+    <nav class="link"><a href="https://github.com/anshunderscore">Github</a> | <a href="https://drive.google.com/file/d/1pjiw06gkuEFIcHqhrxdylBFtcATy1qe1/">Resume</a></nav>
   </header>
 
   <h1 class="heading" id="greeting-placeholder">👋  </h1>
@@ -161,7 +166,7 @@
 
 <script>
   let i = 0
-  const duration = 50
+  const duration = 75
   const txt = " Hi, I'm Ansh"
 
   function typeWriter() {

@@ -47,6 +47,7 @@
   }
 
   header, footer {
+    color: var(--muted-text-color);
     text-align: center;
     letter-spacing: 1px;
     display: flex;
@@ -54,6 +55,15 @@
     max-width: 43rem;
     padding: 3rem 0;
     margin: 0 auto;
+  }
+
+  header a, footer a{
+    text-decoration: none;
+    color: var(--muted-text-color);
+  }
+
+  header a:hover {
+    color: var(--link-color);
   }
 
   footer {
@@ -76,21 +86,6 @@
     padding-top: 1rem;
   }
 
-  .name {
-    color: var(--muted-text-color);
-    display: flex;
-    font-weight: bold;
-  }
-
-  .link a{
-    text-decoration: none;
-    color: var(--muted-text-color);
-  }
-
-  .link a:hover {
-    color: var(--link-color);
-  }
-
   .heading {
     padding: 1rem 0;
   }
@@ -111,11 +106,23 @@
   .social-icons {
     font-size: larger;
     letter-spacing: 0.25rem;
+    cursor: default;
   }
 
-  .social-icons a {
-    color: var(--muted-text-color);
-    text-decoration: none;
+  .fa-twitter:hover {
+    color: #1DA1F2;
+  }
+  .fa-linkedin:hover {
+    color: #007BB6;
+  }
+  .fa-instagram:hover {
+    color: #CD486B;
+  }
+  .fa-github:hover {
+    color: #808080;
+  }
+  .fa-envelope:hover{
+    color: #00A7EE;
   }
 
 </style>
@@ -123,8 +130,8 @@
 <body onload="typeWriter()">
 
   <header>
-    <span class="name link"><a href="https://www.ansht.me">ANSH TIWATNE</a></span>
-    <nav class="link"><a href="https://github.com/anshunderscore">Github</a> | <a href="https://drive.google.com/file/d/1pjiw06gkuEFIcHqhrxdylBFtcATy1qe1/">Resume</a></nav>
+    <span><a href="https://www.ansht.me"><b>ANSH TIWATNE</b></a></span>
+    <nav><a href="https://github.com/anshunderscore">Github</a> | <a href="https://drive.google.com/file/d/1pjiw06gkuEFIcHqhrxdylBFtcATy1qe1/">Resume</a></nav>
   </header>
 
   <h1 class="heading" id="greeting-placeholder">👋 </h1>
@@ -143,14 +150,14 @@
                     ||     ||   </pre>
 
   <footer>
-    <span class="name">© Ansh Tiwatne</span>
-    <span class="social-icons">
+    <span>© Ansh Tiwatne</span>
+    <nav class="social-icons">
       <a href="https://twitter.com/ansht_" class="fa-brands fa-twitter"></a>
       <a href="https://www.linkedin.com/in/ansht/" class="fa-brands fa-linkedin"></a>
       <a href="https://www.instagram.com/anshunderscore/" class="fa-brands fa-instagram"></a>
       <a href="https://github.com/anshunderscore" class="fa-brands fa-github"></a>
       <a href="mailto:ansh.tiwatne@gmail.com" class="fa-solid fa-envelope"></a>
-    </span>
+    </nav>
   </footer>
 
 </body>

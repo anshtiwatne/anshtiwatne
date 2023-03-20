@@ -17,7 +17,7 @@
   <meta name="description" content="My portfolio website — discover my interests and explore my latest updates">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.ansht.me/avatar.webp">
-  <meta name="darkreader-lock"> <!-- prevents dark reader from theming website -->
+  <meta name="darkreader-lock">
 </head>
 
 <style>
@@ -42,7 +42,7 @@
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     line-height: 2.1rem;
     padding: 0 1.5rem;
     margin: 0 auto;
@@ -51,35 +51,31 @@
 
   header, footer {
     color: var(--muted-text-color);
-    text-align: center;
-    letter-spacing: 1px;
     display: flex;
+    text-align: center;
     justify-content: space-between;
+    letter-spacing: 1px;
     max-width: 43rem;
     padding: 3rem 0;
     margin: 0 auto;
   }
 
-  header a, footer a{
+  a {
+    color: var(--link-color);
     text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  header a, footer a {
     color: var(--muted-text-color);
   }
 
-  header a:hover {
-    color: var(--link-color);
-  }
-
-  footer {
-    letter-spacing: normal;
-  }
-
-  .about a {
+  header a:hover, footer a:hover {
     color: var(--link-color);
     text-decoration: none;
-  }
-
-  .about a:hover {
-    text-decoration: underline;
   }
 
   .aboutSubheader {
@@ -89,20 +85,14 @@
     padding-top: 1rem;
   }
 
-  .heading {
-    padding: 1rem 0;
-  }
-
   .ascii-art {
     line-height: normal;
     text-align: right;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     font-size: small;
-    padding-top: 1rem;
   }
 
   .ascii-art a {
-    color: var(--link-color);
     text-decoration: none;
   }
 
@@ -138,11 +128,11 @@
 <body onload="typeWriter()">
 
   <header>
-    <span><a href="https://www.ansht.me"><b>ANSH TIWATNE</b></a></span>
+    <a href="https://www.ansht.me"><b>ANSH TIWATNE</b></a>
     <nav><a href="https://github.com/anshunderscore">Github</a> | <a href="https://drive.google.com/file/d/1pjiw06gkuEFIcHqhrxdylBFtcATy1qe1/">Resume</a></nav>
   </header>
 
-  <h1 class="heading" id="greeting-placeholder">👋 </h1>
+  <h1 id="greeting-placeholder" style="padding: 1rem 0;">👋 </h1>
   <p class="about">I'm a high school student at <a href="https://dlrc.in/">DLRC</a>, with a keen interest for computer science and physics. I enjoy coding, especially problem solving as well and open source software.</p>
   <div class="aboutSubheader">⚒️ MY WORK</div><p class="about">I'm constantly pursuing new projects that intrigue me, from creating an <a href="https://ansht.stck.me/post/16674/Hello-Wordle">algorithm to solve Wordle</a> to <a href="https://github.com/anshunderscore/chat-analyzer">analyzing sentiment in WhatsApp chats</a>. You can find all of my endeavors on my <a href="https://github.com/anshunderscore">Github</a>, and explore some of my more interesting projects I've documented on my blog on <a href="https://ansht.stck.me/">ScrollStack</a>.</p>
   <div class="aboutSubheader">🚀 LEARNING</div><p class="about">I find great pleasure in expanding my coding skills by exploring new programming languages and frameworks. Currently, I'm learning <a href="https://www.learnpytorch.io/">PyTorch</a>, hoping to get started into neural networks, I have completed various <a href="https://github.com/anshunderscore/anshunderscore/blob/main/links.md">online courses</a> on platforms such as Coursera in the past. In addition, I am deeply interested in the subject of physics, which I continue to study through books and courses.</p>
@@ -159,7 +149,7 @@
                     ||     ||   </pre>
 
   <footer>
-    <span>&copy; Ansh Tiwatne</span>
+    <span style="letter-spacing: normal;">&copy; Ansh Tiwatne</span>
     <nav class="social-icons">
       <a title="twitter" href="https://twitter.com/ansht_" class="fa-brands fa-twitter"></a>
       <a title="linkedin" href="https://www.linkedin.com/in/ansht/" class="fa-brands fa-linkedin"></a>
@@ -181,7 +171,7 @@
     if (i < txt.length) {
       element.innerHTML += txt.charAt(i)
       i++; setTimeout(typeWriter, duration)
-      }
+    }
   }
 </script>
 

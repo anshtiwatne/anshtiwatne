@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Ansh
+## 👋 Hi, I'm Ansh
 
   - I'm a highschool student, who loves coding
   - I mainly develop in Python and Javascript

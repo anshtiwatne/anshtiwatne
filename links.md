@@ -15,13 +15,13 @@
 # Projects
 
 - [Wordle Solving Algorithm](https://ansht.stck.me/post/16674/Hello-Wordle)
-- [WhatsApp Chat Statistics App](https://github.com/anshunderscore/chat-analyzer)
-- [Wikipedia Philosophy Crawler](https://github.com/anshunderscore/philosophy-wikicrawl)
-- All other projects [right here on GitHub](https://github.com/anshunderscore?tab=repositories)
+- [WhatsApp Chat Statistics App](https://github.com/anshtiwatne/chat-analyzer)
+- [Wikipedia Philosophy Crawler](https://github.com/anshtiwatne/philosophy-wikicrawl)
+- All other projects [right here on GitHub](https://github.com/anshtiwatne?tab=repositories)
 
 # Web Profiles
 
-- [GitHub](https://github.com/anshunderscore)
+- [GitHub](https://github.com/anshtiwatne)
 
 - [Blog](https://ansht.stck.me) on ScrollStack
 

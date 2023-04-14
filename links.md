@@ -2,7 +2,11 @@
 
 - [UniApps Internship Completion Certificate](https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma/view?usp=sharing)
 
+- [1point01 Internship Completion Certificate](https://drive.google.com/file/d/1D7jHguOCFYTmwKFYlaNIDLzQP9o30UFZ/view?usp=share_link)
+
 - [Google IT Support Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR)
+
+- [CS50x Puzzle Day 2023](https://certificates.cs50.io/2bbc0ffc-e04f-4cf5-8fbc-e86cebfe4b63.pdf)
 
 - [System Administration and IT Infrastructure Services](https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR)
 

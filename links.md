@@ -3,7 +3,7 @@
 - [Google Code Jam 2023](https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC/view?usp=sharing)
 
 # Internships:
-2022 - [1point01 Internship Completion Certificate](https://drive.google.com/file/d/1D7jHguOCFYTmwKFYlaNIDLzQP9o30UFZ/view?usp=share_link)
+2022 - [1point01 Internship Completion Certificate](https://drive.google.com/file/d/1D7jHguOCFYTmwKFYlaNIDLzQP9o30UFZ/view?usp=share_link)<br>
 2021 - [UniApps Internship Completion Certificate](https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma/view?usp=sharing)
 
 # Courses:

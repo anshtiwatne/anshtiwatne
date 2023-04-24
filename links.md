@@ -20,6 +20,7 @@
 - All other projects [right here on GitHub](https://github.com/anshtiwatne?tab=repositories)
 
 # Web Profiles
+- [Personal Website](https://www.ansht.me/)
 - [GitHub](https://github.com/anshtiwatne)
 - [Blog](https://ansht.stck.me) on ScrollStack
 - [LinkedIn](https://www.linkedin.com/in/ansht/)

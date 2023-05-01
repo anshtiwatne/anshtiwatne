@@ -22,5 +22,5 @@
 # Web Profiles
 - [Personal Website](https://www.ansht.me/)
 - [GitHub](https://github.com/anshtiwatne)
-- [Blog](https://ansht.stck.me) on ScrollStack
+- [Blog](https://ansht.stck.me) on Stck.me
 - [LinkedIn](https://www.linkedin.com/in/ansht/)

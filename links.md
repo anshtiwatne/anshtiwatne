@@ -7,6 +7,7 @@
 2021 - [UniApps Internship Completion Certificate](https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma/view?usp=sharing)
 
 # Courses:
+- [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 - [Google IT Support Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR)
 - [System Administration and IT Infrastructure Services](https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR)
 - [Crash Course on Python](https://www.coursera.org/account/accomplishments/certificate/TVZK74AUUDRF)

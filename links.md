@@ -3,11 +3,13 @@
 - [Google Code Jam 2023](https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC/view?usp=sharing)
 
 # Internships:
+2022 - [DLRC Campus Internship](https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls/view?usp=sharing)
 2022 - [1point01 Internship Completion Certificate](https://drive.google.com/file/d/1D7jHguOCFYTmwKFYlaNIDLzQP9o30UFZ/view?usp=share_link)<br>
 2021 - [UniApps Internship Completion Certificate](https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma/view?usp=sharing)
 
 # Courses:
 <!-- - [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) -->
+- [Lodha Genius Program](https://drive.google.com/file/d/19BQsXb7ijZcNXOXd_IO9j_yeFDBLmSJq/view?usp=sharing)
 - [Google IT Support Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR)
 - [System Administration and IT Infrastructure Services](https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR)
 - [Crash Course on Python](https://www.coursera.org/account/accomplishments/certificate/TVZK74AUUDRF)

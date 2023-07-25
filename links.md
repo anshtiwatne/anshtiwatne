@@ -17,6 +17,7 @@
 - [Getting started with Google Workspace Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/6T9A9KYP8L8X)
 
 # Projects
+- [DLRC Daily App](https://play.google.com/store/apps/details?id=in.dlrc.daily.twa)
 - [Wordle Solving Algorithm](https://ansht.stck.me/post/16674/Hello-Wordle)
 - [WhatsApp Chat Statistics App](https://github.com/anshtiwatne/chat-analyzer)
 - [Wikipedia Philosophy Crawler](https://github.com/anshtiwatne/philosophy-wikicrawl)

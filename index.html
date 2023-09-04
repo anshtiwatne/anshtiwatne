@@ -185,7 +185,7 @@
     const txt = " Hi, I'm Ansh"
 
     function typeWriter() {
-        let element = document.getElementById("greeting-placeholder")
+        const element = document.getElementById("greeting-placeholder")
         if (i < txt.length) {
             element.innerHTML += txt.charAt(i)
             i++; setTimeout(typeWriter, duration)

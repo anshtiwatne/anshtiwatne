@@ -152,25 +152,44 @@
     .fa-envelope:hover {
         color: #00A7EE;
     }
+
+    @media print {
+        header {
+            padding-top: 1rem;
+        }
+        footer {
+            padding-bottom: 1rem;
+        }
+    }
 </style>
 
 <body onload="typeWriter()">
 
     <header>
         <a href="https://www.ansht.me"><b>ANSH TIWATNE</b></a>
-        <nav><a href="https://github.com/anshtiwatne">Github</a> | Resume</a></nav>
+        <nav>
+            <a href="tel:+91 9075055300" class="fa-solid fa-phone"></a> |
+            <a href="maito:ansh.tiwatne@gmail.com" class="fa-solid fa-envelope"></a>
+        </nav>
+        <!-- <nav><a href="https://github.com/anshtiwatne">Github</a> | Resume</a></nav> -->
     </header>
 
     <h1 id="greeting-placeholder" style="padding: 1rem 0;">👋 </h1>
     <p class="about">
-        I'm a G11 student at <a href="https://dlrc.in">DLRC</a>, I obsessively write code. I have devoted myself to Physics, Math and Computer Science. 
+        I'm a G11 student at <a href="https://dlrc.in">DLRC</a>, I obsessively write code. My other passions include Physics, Math and Computer Science. 
     </p>
+
+    <div class="about-subheader">🕜 AVAILABILITY</div>
+    <p>I'll certainly be able to dedicate a minimum of 6 hours a week for 2 months in the summer to begin with (and then possibly longer), but I'm not very sure about my availability as of now.</p>
+
+    <div class="about-subheader">🥅 GOALS</div>
+    <p class="about">I plan to further study computer science and physics in college. I'm also interested in pursuing a career as a computer scientist or a researcher. I am easily fascinated by new technologies and would love to have a career involving them.</p>
 
     <div class="about-subheader">⚒️ MY WORK</div>
     <p class="about">
         I'm always working on new projects that interest me, most of these are open source which you can find on my <a href="GitHub">GitHub</a>, but below are a few extra special ones:
         <ul>
-            <li><a href="https://play.google.com/store/apps/details?id=in.dlrc.daily.twa"><b>DLRC Daily</b></a> ~> A short from news app (like inshorts) for my school written in vanilla JS using Firebase (currently migrating to Next.js).</li>
+            <li><a href="https://play.google.com/store/apps/details?id=in.dlrc.daily.twa"><b>DLRC Daily</b></a> ~> A short form news app (like inshorts) for my school written in vanilla JS using Firebase (currently migrating to Next.js).</li>
             <li><a href="https://ansht.stck.me/post/16674/Hello-Wordle"><b>Worlde Solver</b></a> ~> Algorithm written in Python to beat Wordle, uses Playwright for web scraping.</li>
             <li><a href="https://github.com/anshtiwatne/chat-analyzer"><b>WhatStats</b></a> ~> A WhatsApp chat analyzer written in Python which provides statistics on your WhatsApp texts.</li>
         </ul>
@@ -181,21 +200,21 @@
         <div style="display: flex; justify-content: space-between;">
             <div><a href="dlrc.in">DLRC</a> — IGCSE: 2021-2023
                 <ul>
-                    <li>Physics 0625: A<sup>*</sup> (95)</li>
-                    <li>Chemistry 0620: A<sup>*</sup> (93)</li>
-                    <li>Mathematics 0580: A<sup>*</sup> (91)</li>
-                    <li>Geography 0460: A<sup>*</sup> (93)</li>
-                    <li>ESL 0510: A<sup>*</sup> (95), Oral — 1</li>
+                    <li>Physics: A<sup>*</sup></li>
+                    <li>Chemistry: A<sup>*</sup></li>
+                    <li>Mathematics: A<sup>*</sup></li>
+                    <li>Geography: A<sup>*</sup></li>
+                    <li>Eng 2<sup>nd</sup> Lang: A<sup>*</sup>, Oral — 1</li>
                 </ul>
                 <a href="https://drive.google.com/file/d/19i72KJpiW9S0emJIPuA4WUxZH3s5o5dw/view?usp=drive_link">Result Certificate</a>
             </div>
             <div><a href="dlrc.in">DLRC</a> — AS & A (current subjects)
                 <ul>
-                    <li>Physics 9702</li>
-                    <li>Chemistry 9701</li>
-                    <li>Mathematics 9709</li>
-                    <li>Computer Science 9618</li>
-                    <li>General English 9093</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Mathematics</li>
+                    <li>Computer Science</li>
+                    <li>General English</li>
                 </ul>
             </div>
         </div>
@@ -233,10 +252,10 @@
         <div>
             <div class="about-subheader">🖥️ LANGUAGES (computer)</div>
             <ul>
-                <li>Python — native</li>
-                <li>JavaScript — native</li>
-                <li>TypeScript — novice</li>
-                <li>HTML & CSS — proficient</li>
+                <li>Python — advanced</li>
+                <li>JavaScript — intermediate</li>
+                <li>TypeScript — beginner</li>
+                <li>HTML & CSS — advanced</li>
             </ul>
         </div>
     </div>
@@ -260,8 +279,9 @@
 
             <li>
             <p><a href="https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma/view?usp=sharing"><b>WeShineTech</b></a>: May-Jun 2020</p>
-            <p style="margin-top: -1rem;">1. Provided chat support to students for our online examination system 2. Analyzed online examination system setup and created a video tutorial 3. Improved social media presence</p>
+            <p style="margin-top: -1rem;">Provided chat support to students for their online examination system. Analyzed online examination system setup and created a video tutorial. Improved social media presence.</p>
             <blockquote>During the internship period, we found him inquisitive, sincere and result oriented</blockquote>
+            <p>Reference: Ramakrishna Kulkarni <a href="mailto:ram@weshinetech.biz" class="fa-solid fa-envelope"></a></p>
             </li>
         </ul>
 
@@ -270,6 +290,7 @@
             <li>
             <p><a href="https://daily.dlrc.in/about"><b>Newsletter Internship</b></a>: Jun 2023-present</p>
             <p style="margin-top: -1rem;">Created the DLRC Daily app for the school's newsletter team, to circulate news snippets within the school community. Presently involved in app maintenance and article publication. The app currently has 150 users and 100+ downloads on the Play Store.</p>
+            <p>Reference: To be added</p>
             </li>
 
             <li>
@@ -299,19 +320,11 @@
         <div style="margin-top: -1rem;">Taught NCERT science online to middle school students during the pandemic, when schools were closed.</div>
     </p>
 
-    <div class="about-subheader">🥅 GOALS</div>
-    <p class="about">
-        I plan to further study computer science and physics in college. I'm also interested in pursuing a career as a computer scientist or a researcher. I am easily fascinated by new technologies and would love to have a career involving them.
-    </p>
-
-    <div class="about-subheader">🕜 AVAILABILITY</div>
-    <p>I'm looking to intern for ideally 2 months (and possibly longer), starting in { Feb || March || April || July } for { 6 <= hours <= 40 } a week (not sure of the details yet). My timings are possibly flexible</p>
-
     <div style="display: flex; justify-content: space-between;">
-        <p><a href="https://github.com/anshtiwatne/anshtiwatne/blob/main/links.md">My Certificates =></a></p>
+        <p><a href="https://github.com/anshtiwatne/anshtiwatne/blob/main/links.md">My certificates <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
         <pre class="ascii-art">
         _____________              
-        < <a href="#top">back to top</a> >             
+        < <a href="">video resume</a> >             
         -------------              
                 \   ^__^            
                  \  (oo)\_______    
@@ -321,7 +334,7 @@
     </div>
 
     <footer>
-        <span style="letter-spacing: normal;"><i class="fa-regular fa-copyright"></i> Ansh Tiwatne</span>
+        <span style="letter-spacing: normal;"><i class="fa-regular fa-copyright"></i> adapted from <a href="https://www.ansht.me" style="color: var(--link-color);">ansht.me</a></span>
         <nav class="social-icons">
             <a title="X" href="https://x.com/ansht_" class="fa-brands fa-x-twitter"></a>
             <a title="LinkedIn" href="https://www.linkedin.com/in/ansht/" class="fa-brands fa-linkedin"></a>

@@ -1,8 +1,8 @@
 ## 👋 Hi, I'm Ansh
 
-  - I'm a highschool student, who loves coding
-  - I mainly develop in Python and Typescript
-  - I'm curruntly into Next.js
+  - I'm a G11 student at [DLRC](https://dlrc.in)
+  - I'm currently involved with developing apps at [Inspirit Vision](https://inspiritvision.com)
+  - I mainly develop in Typescript and Python
 
 You can learn more about me on [my website](https://anshtiwatne.github.io)
 

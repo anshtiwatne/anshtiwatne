@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<style>
+		:root {
+			color-scheme: light;
+			--bg-color: #ffffff;
+			--text-color: #24292f;
+			--link-color: #0969da;
+			--muted-text-color: #57606a;
+			--quote-color: #3182ce;
+			--quote-bg: #f3f3f3;
+			--icon-hover: #171515;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				color-scheme: dark;
+				--bg-color: #1a1b1e;
+				--text-color: #f5f5f5;
+				--muted-text-color: #d4d4d4;
+				--link-color: #3b82f6;
+				--quote-color: #c2cbd4;
+				--quote-bg: #262729;
+				--icon-hover: #ffffff;
+			}
+		}
+
+		body {
+			background-color: var(--bg-color);
+			font-family: 'JetBrains Mono', sans-serif;
+			max-width: 45rem;
+			margin: 0 auto;
+			padding: 2rem;
+            line-height: 1.625rem;
+		}
+
+		header {
+			color: var(--muted-text-color);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+        header a {
+			color: var(--muted-text-color);
+		}
+
+        header a:hover {
+            color: var(--link-color);
+        }
+
+		nav {
+			display: flex;
+			gap: 1rem;
+		}
+
+		a {
+			color: var(--link-color);
+			text-decoration: none;
+		}
+
+		.name {
+			font-weight: bold;
+			color: var(--muted-text-color);
+            letter-spacing: 0.0625rem;
+		}
+
+        .greeting {
+            font-size: 1.75rem;
+            margin-top: 2rem;
+            color: var(--text-color);
+            padding: 2.5rem 0 1rem;
+        }
+
+        .section-header {
+            font-size: 1.25rem;
+            color: var(--text-color);
+            padding: 1rem 0 0rem;
+            letter-spacing: 0.0625rem;
+        }
+	</style>
+
+	<body>
+		<header>
+			<a href="/" class="name">ANSH TIWATNE</a>
+			<nav>
+				<a href="#">GitHub</a> | <a href="https://notes.ansht.com/">AS Notes</a>
+			</nav>
+		</header>
+
+        <h1 class="greeting">👋 Hi I'm Ansh</h1>
+        <p>I'm a G11 student at DLRC, I obsessively write code. I'm currently involved with developing apps at Inspirit Vision.</p>
+
+        <h2 class="section-header">🛠️ PROJECTS</h2>
+        <p>
+            <a href="https://iv-blood-donation.web.app/"><b>Prana Daan App</b></a> ->
+            React PWA for registrations and event management for a blood donation drive at Inspirit Vision (my largest project by far ~12500 lines of TypeScript)
+        </p>
+        <p>
+            <a href="https://www.chalodaudne.in/"><b>Chalodaudne.in</b></a> ->
+            React (Next.js) PWA for keeping track of runners during marathons held by Inspirit Vision
+        </p>
+	</body>
+</html>

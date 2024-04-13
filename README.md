@@ -4,7 +4,7 @@
   - I'm currently involved with developing apps at [Inspirit Vision](https://inspiritvision.com)
   - I mainly develop in Typescript and Python
 
-You can learn more about me on [my website](https://anshtiwatne.github.io)
+You can learn more about me on [my website](https://ansht.com/)
 
 <!---
 anshunderscore/anshunderscore is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

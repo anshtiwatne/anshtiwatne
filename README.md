@@ -1,6 +1,6 @@
 ## 👋 Hi, I'm Ansh
 
-  - I'm a G11 student at [DLRC](https://dlrc.in)
+  - I'm a G12 student at [DLRC](https://dlrc.in)
   - I'm currently involved with developing apps at [Inspirit Vision](https://inspiritvision.com)
   - I mainly develop in Typescript and Python
 

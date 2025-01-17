@@ -12,30 +12,45 @@ import {
 	faGithub,
 	faLinkedin,
 	faXTwitter,
+	faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
+import { ThemeSwitch } from '@/components/theme-switch'
+
+const isResume = false
 
 function Header() {
 	return (
-		<header className="flex items-center justify-between text-lg text-foreground-600">
-			{/* <p className="font-bold tracking-wide">ANSH TIWATNE</p> */}
-			{/* <div className="flex items-center gap-2 font-medium"> */}
-			<Link color="foreground" href="mailto:hello@ansht.com">
-				<span className="text-foreground-600">📧 hello@ansht.com</span>
-			</Link>
-			{/* | */}
-			<Link color="foreground" href="tel:+919075055300">
-				<span className="text-foreground-600">📞 +91 9075055300</span>
-			</Link>
-			{/* </div> */}
-		</header>
+		isResume ? (
+			<header className="flex items-center justify-between text-lg text-foreground-600">
+				<Link color="foreground" href="mailto:hello@ansht.com">
+					<span className="text-foreground-600">📧 hello@ansht.com</span>
+				</Link>
+				<Link color="foreground" href="tel:+919075055300">
+					<span className="text-foreground-600">📞 +91 9075055300</span>
+				</Link>
+			</header>
+		) : (
+			<header className="flex items-center justify-between text-lg text-foreground-600">
+				<p className="font-bold tracking-wide">ANSH TIWATNE</p>
+				<div className="flex items-center gap-2 font-medium">
+					<Link color="foreground" href="https://github.com/anshtiwatne">
+						<span className="text-foreground-600">🔗 GitHub</span>
+					</Link>
+					|
+					<Link color="foreground" href="https://notes.ansht.com">
+						<span className="text-foreground-600">📓 AS & A Notes</span>
+					</Link>
+					|
+					<ThemeSwitch />
+				</div>
+			</header>
+		)
 	)
 }
 
 function Footer() {
 	return (
-		<footer className="flex items-center justify-between pt-[20rem]">
-			{' '}
-			{/* pt-[20rem] */}
+		<footer className="flex items-center justify-between pt-10">
 			<Link
 				className="flex items-center gap-2 text-foreground-600"
 				href="https://ansht.com"
@@ -62,7 +77,9 @@ function Footer() {
 				>
 					<FontAwesomeIcon icon={faXTwitter} size="lg" />
 				</Link>
-				{/* <Link className="text-foreground-600" href="https://www.instagram.com/anshtiwatne"><FontAwesomeIcon icon={faInstagram} size="lg" /></Link> */}
+				{!isResume && (
+					<Link className="text-foreground-600" href="https://www.instagram.com/anshtiwatne"><FontAwesomeIcon icon={faInstagram} size="lg" /></Link>
+				)}
 				<Link
 					className="text-foreground-600"
 					href="mailto:ansh.tiwatne@gmail.com"
@@ -91,10 +108,12 @@ function Section({
 
 export default function Home() {
 	return (
-		<main className="mx-auto flex max-w-2xl flex-col gap-8 p-4 tracking-wide text-foreground-800">
+		<main className="mx-auto flex max-w-3xl flex-col gap-8 p-4 tracking-wide text-foreground-800">
 			<Header />
 
-			<p className="mb-[-1rem] pt-4 text-4xl font-bold">Ansh Tiwatne</p>
+			<p className="mb-[-1rem] pt-4 text-4xl font-bold">
+				{isResume ? "Ansh Tiwatne" : "👋 Hi, I'm Ansh"}
+			</p>
 			<p>
 				Grade 12 student at <Link href="https://dlrc.in">DLRC</Link> and
 				Software Developer at{' '}
@@ -566,9 +585,7 @@ export default function Home() {
 			</Section>
 
 			<Section title="📚 ONLINE COURSES">
-				<ul className="list-disc pb-10 pl-4">
-					{' '}
-					{/* pb-10 */}
+				<ul className="list-disc pl-4">
 					<li>HarvardX: CS50's Introduction to Computer Science</li>
 					<li>
 						<Link href="https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR">

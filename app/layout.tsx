@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html suppressHydrationWarning lang="en">
 			<body
-				className={`${monaSans.className} h-screen w-screen bg-background antialiased`}
+				className={`${monaSans.className} w-screen bg-background antialiased dark:bg-[#1A1B1E]`}
 			>
 				<Providers
 					themeProps={{

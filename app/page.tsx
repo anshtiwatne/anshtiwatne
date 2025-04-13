@@ -1,7 +1,7 @@
 'use client'
 /* eslint-disable react/no-unescaped-entities */
 
-import { Link } from "@heroui/react"
+import { Link } from '@heroui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faArrowUpRightFromSquare,
@@ -19,32 +19,30 @@ import { ThemeSwitch } from '@/components/theme-switch'
 const isResume = false
 
 function Header() {
-	return (
-		isResume ? (
-			<header className="flex items-center justify-between text-lg text-foreground-600">
-				<Link color="foreground" href="mailto:hello@ansht.com">
-					<span className="text-foreground-600">📧 hello@ansht.com</span>
+	return isResume ? (
+		<header className="flex items-center justify-between text-lg text-foreground-600">
+			<Link color="foreground" href="mailto:hello@ansht.com">
+				<span className="text-foreground-600">📧 hello@ansht.com</span>
+			</Link>
+			<Link color="foreground" href="tel:+919075055300">
+				<span className="text-foreground-600">📞 +91 9075055300</span>
+			</Link>
+		</header>
+	) : (
+		<header className="flex items-center justify-between text-lg text-foreground-600">
+			<p className="font-bold tracking-wide">ANSH TIWATNE</p>
+			<div className="flex items-center gap-2 font-medium">
+				<Link color="foreground" href="https://github.com/anshtiwatne">
+					<span className="text-foreground-600">🔗 GitHub</span>
 				</Link>
-				<Link color="foreground" href="tel:+919075055300">
-					<span className="text-foreground-600">📞 +91 9075055300</span>
+				|
+				<Link color="foreground" href="https://notes.ansht.com">
+					<span className="text-foreground-600">📓 AS & A Notes</span>
 				</Link>
-			</header>
-		) : (
-			<header className="flex items-center justify-between text-lg text-foreground-600">
-				<p className="font-bold tracking-wide">ANSH TIWATNE</p>
-				<div className="flex items-center gap-2 font-medium">
-					<Link color="foreground" href="https://github.com/anshtiwatne">
-						<span className="text-foreground-600">🔗 GitHub</span>
-					</Link>
-					|
-					<Link color="foreground" href="https://notes.ansht.com">
-						<span className="text-foreground-600">📓 AS & A Notes</span>
-					</Link>
-					|
-					<ThemeSwitch />
-				</div>
-			</header>
-		)
+				|
+				<ThemeSwitch />
+			</div>
+		</header>
 	)
 }
 
@@ -78,7 +76,12 @@ function Footer() {
 					<FontAwesomeIcon icon={faXTwitter} size="lg" />
 				</Link>
 				{!isResume && (
-					<Link className="text-foreground-600" href="https://www.instagram.com/anshtiwatne"><FontAwesomeIcon icon={faInstagram} size="lg" /></Link>
+					<Link
+						className="text-foreground-600"
+						href="https://www.instagram.com/anshtiwatne"
+					>
+						<FontAwesomeIcon icon={faInstagram} size="lg" />
+					</Link>
 				)}
 				<Link
 					className="text-foreground-600"
@@ -112,7 +115,7 @@ export default function Home() {
 			<Header />
 
 			<p className="mb-[-1rem] pt-4 text-4xl font-bold">
-				{isResume ? "Ansh Tiwatne" : "👋 Hi, I'm Ansh"}
+				{isResume ? 'Ansh Tiwatne' : "👋 Hi, I'm Ansh"}
 			</p>
 			<p>
 				Grade 12 student at <Link href="https://dlrc.in">DLRC</Link> and

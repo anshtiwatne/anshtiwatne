@@ -4,10 +4,8 @@ export function ThemeSwitch() {
 	const { theme, setTheme } = useTheme()
 
 	return (
-		<button
-			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-		>
-			{theme === 'dark' ? "☀️" : "🌙"}
+		<button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+			{theme === 'dark' ? '☀️' : '🌙'}
 		</button>
 	)
 }

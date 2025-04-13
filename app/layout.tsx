@@ -34,6 +34,8 @@ const jsonLd = {
 			'https://www.youtube.com/@anshtiwatne',
 			'https://www.facebook.com/anshtiwatne',
 			'https://ansht.com',
+			'https://www.wikidata.org/wiki/Q133865037',
+			'https://commons.wikimedia.org/wiki/Category:Ansh_Tiwatne',
 		],
 		jobTitle: 'Software Developer',
 		worksFor: {

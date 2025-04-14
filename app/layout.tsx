@@ -23,7 +23,7 @@ const jsonLd = {
 		knowsLanguage: ['English', 'Hindi', 'Marathi'],
 		gender: 'Male',
 		url: 'https://ansht.com',
-		image: 'https://ansht.com/avatar.webp',
+		image: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Ansh_Tiwatne_LGP.jpg',
 		description:
 			'Ansh Tiwatne is a high school student at DLRC. He is currently working at Inspirit Vision as a Software Developer',
 		sameAs: [

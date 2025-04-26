@@ -136,11 +136,11 @@ export default function Home() {
 				{isResume ? 'Ansh Tiwatne' : "👋 Hi, I'm Ansh"}
 			</p>
 			<p itemScope itemProp="desc">
-				Grade 12 student at <Link href="https://dlrc.in">DLRC</Link> and
 				Software Developer at{' '}
-				<Link href="https://inspiritvision.com">Inspirit Vision</Link>,
-				passionate about crafting innovative solutions through code. Can
-				be found cycling or playing frisbee when not coding.
+				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
+				and <Link href="https://dlrc.in">DLRC</Link> Alumnus. I
+				primarily work with Python, TypeScript, and React, specializing
+				in web development.
 			</p>
 
 			<Section title="⚒️ PROJECTS">

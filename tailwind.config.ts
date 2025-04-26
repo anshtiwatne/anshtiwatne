@@ -1,4 +1,3 @@
-import { heroui } from '@heroui/react'
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -9,5 +8,4 @@ export default {
 		'./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
 	],
 	darkMode: 'class',
-	plugins: [heroui()],
 } satisfies Config

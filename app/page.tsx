@@ -1,7 +1,7 @@
-'use client'
 /* eslint-disable react/no-unescaped-entities */
+'use client'
 
-import { Link } from '@heroui/react'
+import NextLink from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faArrowUpRightFromSquare,
@@ -14,30 +14,62 @@ import {
 	faXTwitter,
 	faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
-import { ThemeSwitch } from '@/components/theme-switch'
+import ThemeSwitch from '@/components/theme-switch'
 
 const isResume = false
 
+function Link({
+	href,
+	target,
+	color,
+	className,
+	children,
+}: {
+	href: string
+	target?: string
+	color?: string
+	className?: string
+	children: React.ReactNode
+}) {
+	return (
+		<NextLink
+			className={
+				color === 'foreground'
+					? className
+					: `text-blue-600 ${className}`
+			}
+			href={href}
+			target={target}
+		>
+			{children}
+		</NextLink>
+	)
+}
+
 function Header() {
 	return isResume ? (
-		<header className="flex items-center justify-between text-lg text-foreground-600">
+		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
 			<Link color="foreground" href="mailto:hello@ansht.com">
-				<span className="text-foreground-600">📧 hello@ansht.com</span>
+				<span className="text-[#52525B] dark:text-[#D4D4D8]">
+					📧 hello@ansht.com
+				</span>
 			</Link>
 			<Link color="foreground" href="tel:+919075055300">
-				<span className="text-foreground-600">📞 +91 9075055300</span>
+				<span className="text-[#52525B] dark:text-[#D4D4D8]">
+					📞 +91 9075055300
+				</span>
 			</Link>
 		</header>
 	) : (
-		<header className="flex items-center justify-between text-lg text-foreground-600">
-			<p className="font-bold tracking-wide">ANSH TIWATNE</p>
+		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
+			<p itemScope itemProp="name" className="font-bold tracking-wide">
+				ANSH TIWATNE
+			</p>
 			<div className="flex items-center gap-2 font-medium">
 				<Link color="foreground" href="https://github.com/anshtiwatne">
-					<span className="text-foreground-600">🔗 GitHub</span>
-				</Link>
-				|
-				<Link color="foreground" href="https://notes.ansht.com">
-					<span className="text-foreground-600">📓 AS & A Notes</span>
+					<span className="text-[#52525B] dark:text-[#D4D4D8]">
+						🔗 GitHub
+					</span>
 				</Link>
 				|
 				<ThemeSwitch />
@@ -47,48 +79,34 @@ function Header() {
 }
 
 function Footer() {
+	const profiles = [
+		{ link: 'https://github.com/anshtiwatne', icon: faGithub },
+		{ link: 'https://www.linkedin.com/in/ansht', icon: faLinkedin },
+		{ link: 'https://x.com/anshtiwatne', icon: faXTwitter },
+		{ link: 'https://www.instagram.com/anshtiwatne', icon: faInstagram },
+		{ link: 'mailto:ansh.tiwatne@gmail.com', icon: faEnvelope },
+	]
 	return (
 		<footer className="flex items-center justify-between pt-10">
 			<Link
-				className="flex items-center gap-2 text-foreground-600"
+				className="flex items-center gap-2 text-[#52525B] dark:text-[#D4D4D8]"
+				color="foreground"
 				href="https://ansht.com"
 			>
 				<FontAwesomeIcon icon={faGlobe} size="lg" />
 				<span>ansht.com</span>
 			</Link>
 			<div className="flex items-center gap-4">
-				<Link
-					className="text-foreground-600"
-					href="https://github.com/anshtiwatne"
-				>
-					<FontAwesomeIcon icon={faGithub} size="lg" />
-				</Link>
-				<Link
-					className="text-foreground-600"
-					href="https://www.linkedin.com/in/ansht"
-				>
-					<FontAwesomeIcon icon={faLinkedin} size="lg" />
-				</Link>
-				<Link
-					className="text-foreground-600"
-					href="https://x.com/anshtiwatne"
-				>
-					<FontAwesomeIcon icon={faXTwitter} size="lg" />
-				</Link>
-				{!isResume && (
+				{profiles.map((profile) => (
 					<Link
-						className="text-foreground-600"
-						href="https://www.instagram.com/anshtiwatne"
+						key={profile.link}
+						className="text-[#52525B] dark:text-[#D4D4D8]"
+						color="foreground"
+						href={profile.link}
 					>
-						<FontAwesomeIcon icon={faInstagram} size="lg" />
+						<FontAwesomeIcon icon={profile.icon} size="lg" />
 					</Link>
-				)}
-				<Link
-					className="text-foreground-600"
-					href="mailto:ansh.tiwatne@gmail.com"
-				>
-					<FontAwesomeIcon icon={faEnvelope} size="lg" />
-				</Link>
+				))}
 			</div>
 		</footer>
 	)
@@ -111,13 +129,13 @@ function Section({
 
 export default function Home() {
 	return (
-		<main className="mx-auto flex max-w-3xl flex-col gap-8 p-4 tracking-wide text-foreground-800">
+		<main className="mx-auto flex max-w-3xl flex-col gap-8 p-4 tracking-wide text-[#27272A] dark:text-[#F4F4F5]">
 			<Header />
 
 			<p className="mb-[-1rem] pt-4 text-4xl font-bold">
 				{isResume ? 'Ansh Tiwatne' : "👋 Hi, I'm Ansh"}
 			</p>
-			<p>
+			<p itemScope itemProp="desc">
 				Grade 12 student at <Link href="https://dlrc.in">DLRC</Link> and
 				Software Developer at{' '}
 				<Link href="https://inspiritvision.com">Inspirit Vision</Link>,
@@ -225,7 +243,7 @@ export default function Home() {
 						<Link
 							className="font-medium"
 							href="https://drive.google.com/file/d/1q3bz5p1evIOMchaBrveo0v6lRMH4r2ej"
-							isExternal
+							target="_blank"
 						>
 							Project Certificate{' '}
 							<FontAwesomeIcon
@@ -253,7 +271,7 @@ export default function Home() {
 						<Link
 							className="font-medium"
 							href="https://drive.google.com/file/d/1D7jHguOCFYTmwKFYlaNIDLzQP9o30UFZ"
-							isExternal
+							target="_blank"
 						>
 							Certificate of Internship{' '}
 							<FontAwesomeIcon
@@ -281,7 +299,7 @@ export default function Home() {
 						<Link
 							className="font-medium"
 							href="https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma"
-							isExternal
+							target="_blank"
 						>
 							Internship Letter{' '}
 							<FontAwesomeIcon
@@ -320,7 +338,7 @@ export default function Home() {
 						<Link
 							className="font-medium"
 							href="https://drive.google.com/file/d/18c21FEawh8s9wqe26yYmFsn6TcXKtEqe"
-							isExternal
+							target="_blank"
 						>
 							Letter of Appreciation{' '}
 							<FontAwesomeIcon
@@ -347,7 +365,7 @@ export default function Home() {
 						<Link
 							className="font-medium"
 							href="https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls"
-							isExternal
+							target="_blank"
 						>
 							Letter of Appreciation{' '}
 							<FontAwesomeIcon
@@ -373,7 +391,7 @@ export default function Home() {
 						<Link
 							className="font-medium"
 							href="https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls"
-							isExternal
+							target="_blank"
 						>
 							Letter of Appreciation{' '}
 							<FontAwesomeIcon
@@ -547,7 +565,7 @@ export default function Home() {
 							<Link
 								className="font-medium"
 								href="https://drive.google.com/file/d/19BQsXb7ijZcNXOXd_IO9j_yeFDBLmSJq"
-								isExternal
+								target="_blank"
 							>
 								Certificate{' '}
 								<FontAwesomeIcon
@@ -559,7 +577,7 @@ export default function Home() {
 							<Link
 								className="font-medium"
 								href="https://www.instagram.com/p/CyBF2m6JXsf"
-								isExternal
+								target="_blank"
 							>
 								Post{' '}
 								<FontAwesomeIcon
@@ -692,7 +710,7 @@ export default function Home() {
 							National School Ultimate Championship
 							<Link
 								href="https://drive.google.com/file/d/1-YnX3m89M2SPnqGH226EmcE7CeSox8Qj"
-								isExternal
+								target="_blank"
 							>
 								Certificate{' '}
 								<FontAwesomeIcon
@@ -708,7 +726,7 @@ export default function Home() {
 							CS50x Puzzle Day 2024
 							<Link
 								href="https://cs50.harvard.edu/certificates/c5bdea6f-5ed8-47b6-b996-e57ed14f995"
-								isExternal
+								target="_blank"
 							>
 								Certificate{' '}
 								<FontAwesomeIcon
@@ -724,7 +742,7 @@ export default function Home() {
 							CS50x Puzzle Day 2023
 							<Link
 								href="https://cs50.harvard.edu/certificates/2bbc0ffc-e04f-4cf5-8fbc-e86cebfe4b63"
-								isExternal
+								target="_blank"
 							>
 								Certificate{' '}
 								<FontAwesomeIcon
@@ -740,7 +758,7 @@ export default function Home() {
 							Google Code Jam 2023
 							<Link
 								href="https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC"
-								isExternal
+								target="_blank"
 							>
 								Certificate{' '}
 								<FontAwesomeIcon

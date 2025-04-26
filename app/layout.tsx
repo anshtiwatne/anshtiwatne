@@ -1,7 +1,8 @@
 import '@/app/globals.css'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Mona_Sans } from 'next/font/google'
-import { Providers } from '@/app/providers'
+import { ThemeProvider } from 'next-themes'
 
 const monaSans = Mona_Sans({ subsets: ['latin'] })
 
@@ -52,20 +53,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html suppressHydrationWarning lang="en">
-			<body
-				className={`${monaSans.className} w-screen bg-background antialiased dark:bg-[#1A1B1E]`}
-			>
-				<Providers
-					themeProps={{
-						attribute: 'class',
-						defaultTheme: 'light',
-						// children: children,
-					}}
-				>
-					{children}
-				</Providers>
+			<body className={`${monaSans.className} antialiased`}>
+				<ThemeProvider attribute="class">{children}</ThemeProvider>
 			</body>
-			<script
+			<Script
+				id="JSON-LD"
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>

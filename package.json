@@ -1,9 +1,9 @@
 {
-	"name": "resume",
+	"name": "anshtiwatne",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbo",
+		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
@@ -14,25 +14,22 @@
 		"@fortawesome/free-brands-svg-icons": "^6.7.2",
 		"@fortawesome/free-solid-svg-icons": "^6.7.2",
 		"@fortawesome/react-fontawesome": "^0.2.2",
-		"@heroui/react": "^2.7.6",
-		"babel-plugin-react-compiler": "^19.0.0-beta-30d8a17-20250209",
-		"framer-motion": "^12.6.5",
-		"next": "^15.1.7",
-		"next-themes": "^0.4.4",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0"
+		"next": "15.3.1",
+		"next-themes": "^0.4.6",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
-		"@types/node": "^22.10.7",
+		"@tailwindcss/postcss": "^4",
+		"@types/node": "^22.15.2",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
 		"eslint": "^9",
-		"eslint-config-next": "^15.1.7",
-		"postcss": "^8",
-		"prettier": "^3.4.2",
-		"prettier-plugin-tailwindcss": "^0.6.9",
-		"tailwindcss": "^3.4.1",
+		"eslint-config-next": "15.3.1",
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"tailwindcss": "^4",
 		"typescript": "^5"
 	}
 }

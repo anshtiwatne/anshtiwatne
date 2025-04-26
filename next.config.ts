@@ -9,9 +9,6 @@ const nextConfig: NextConfig = {
 		reactCompiler: true,
 	},
 	reactStrictMode: true,
-	eslint: {
-		ignoreDuringBuilds: true,
-	},
 }
 
 export default nextConfig

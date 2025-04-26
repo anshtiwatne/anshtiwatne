@@ -54,10 +54,7 @@ function Link({
 
 function Header() {
 	return isResume ? (
-		<header
-			data-nosnippet
-			className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]"
-		>
+		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
 			<Link color="foreground" href="mailto:hello@ansht.com">
 				<span className="text-[#52525B] dark:text-[#D4D4D8]">
 					📧 hello@ansht.com
@@ -74,7 +71,7 @@ function Header() {
 			<p itemProp="name" className="font-bold tracking-wide">
 				ANSH TIWATNE
 			</p>
-			<nav className="flex items-center gap-2 font-medium">
+			<nav data-nosnippet className="flex items-center gap-2 font-medium">
 				<Link color="foreground" href="https://github.com/anshtiwatne">
 					<span className="text-[#52525B] dark:text-[#D4D4D8]">
 						🔗 GitHub

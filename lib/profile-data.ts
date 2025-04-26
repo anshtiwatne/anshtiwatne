@@ -6,7 +6,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-export const data = {
+const profileData = {
 	profiles: [
 		{ link: 'https://github.com/anshtiwatne', icon: faGithub },
 		{ link: 'https://www.linkedin.com/in/ansht', icon: faLinkedin },
@@ -349,3 +349,5 @@ export const data = {
 		},
 	],
 }
+
+export default profileData

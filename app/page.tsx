@@ -8,7 +8,7 @@ import {
 	faGlobe,
 } from '@fortawesome/free-solid-svg-icons'
 import ThemeSwitch from '@/components/theme-switch'
-import { data } from '@/app/data'
+import profileData from '@/lib/profile-data'
 
 const isResume = false
 
@@ -54,7 +54,10 @@ function Link({
 
 function Header() {
 	return isResume ? (
-		<header data-nosnippet className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
+		<header
+			data-nosnippet
+			className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]"
+		>
 			<Link color="foreground" href="mailto:hello@ansht.com">
 				<span className="text-[#52525B] dark:text-[#D4D4D8]">
 					📧 hello@ansht.com
@@ -68,7 +71,9 @@ function Header() {
 		</header>
 	) : (
 		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
-			<p itemProp='name' className="font-bold tracking-wide">ANSH TIWATNE</p>
+			<p itemProp="name" className="font-bold tracking-wide">
+				ANSH TIWATNE
+			</p>
 			<nav className="flex items-center gap-2 font-medium">
 				<Link color="foreground" href="https://github.com/anshtiwatne">
 					<span className="text-[#52525B] dark:text-[#D4D4D8]">
@@ -94,7 +99,7 @@ function Footer() {
 				<span>ansht.com</span>
 			</Link>
 			<div className="flex items-center gap-4">
-				{data.profiles.map((profile) => (
+				{profileData.profiles.map((profile) => (
 					<Link
 						key={profile.link}
 						className="text-[#52525B] dark:text-[#D4D4D8]"
@@ -152,7 +157,7 @@ export default function Home() {
 					—here are a few favorites:
 				</p>
 				<ul className="flex list-disc flex-col gap-2 pl-4">
-					{data.projects.map((project) => (
+					{profileData.projects.map((project) => (
 						<li key={project.name}>
 							{project.link ? (
 								<Link
@@ -173,7 +178,7 @@ export default function Home() {
 
 			<Section title="👨‍💻 WORK EXPERIENCE">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
-					{data.workExperience.map((experience) => (
+					{profileData.workExperience.map((experience) => (
 						<li key={experience.org}>
 							<div className="flex items-center justify-between font-semibold">
 								<span>
@@ -218,7 +223,7 @@ export default function Home() {
 
 			<Section title="💼 INTERNSHIPS">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
-					{data.internships.map((internship) => (
+					{profileData.internships.map((internship) => (
 						<li key={internship.role}>
 							<div className="flex items-center justify-between font-semibold">
 								<span>
@@ -264,7 +269,7 @@ export default function Home() {
 			<div className="flex justify-between">
 				<Section title="🖥️ LANGUAGES (computer)">
 					<ul className="list-disc pl-4">
-						{data.computerLanguages.map((language) => (
+						{profileData.computerLanguages.map((language) => (
 							<li key={language.name}>
 								{language.name} — {language.proficiency}
 							</li>
@@ -274,7 +279,7 @@ export default function Home() {
 				<div className="flex flex-col gap-4">
 					<Section title="🌐 LANGUAGES (human)">
 						<ul className="list-disc pl-4">
-							{data.humanLanguages.map((language) => (
+							{profileData.humanLanguages.map((language) => (
 								<li key={language.name}>
 									{language.name} — {language.proficiency}
 								</li>
@@ -283,7 +288,7 @@ export default function Home() {
 					</Section>
 					<Section title="🤹 SKILLS">
 						<ul className="list-disc pl-4">
-							{data.skills.map((skill) => (
+							{profileData.skills.map((skill) => (
 								<li key={skill}>{skill}</li>
 							))}
 						</ul>
@@ -293,7 +298,7 @@ export default function Home() {
 
 			<Section title="🤝 COMMUNITY SERVICE">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
-					{data.communityService.map((service) => (
+					{profileData.communityService.map((service) => (
 						<li key={service.role}>
 							<div className="flex items-center justify-between font-semibold">
 								<span>
@@ -343,7 +348,7 @@ export default function Home() {
 
 			<Section title="📝 EDUCATION & TESTING">
 				<div className="flex justify-between">
-					{data.boardExams.map((exam) => (
+					{profileData.boardExams.map((exam) => (
 						<div key={exam.qualification}>
 							<p className="font-semibold">
 								{exam.qualification}: {exam.year}
@@ -373,7 +378,7 @@ export default function Home() {
 
 			<Section title="🌞 SUMMER PROGRAMS">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
-					{data.summerPrograms.map((program) => (
+					{profileData.summerPrograms.map((program) => (
 						<li key={program.name}>
 							<div className="flex items-center justify-between font-semibold">
 								{program.link ? (
@@ -415,7 +420,7 @@ export default function Home() {
 
 			<Section title="📚 ONLINE COURSES">
 				<ul className="list-disc pl-4">
-					{data.onlineCourses.map((course) => (
+					{profileData.onlineCourses.map((course) => (
 						<li key={course.name}>
 							{course.certificate ? (
 								<Link href={course.certificate}>
@@ -431,7 +436,7 @@ export default function Home() {
 
 			<Section title="⚽ EXTRACURRICULARS">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
-					{data.extracurriculars.map((extracurricular) => (
+					{profileData.extracurriculars.map((extracurricular) => (
 						<li key={extracurricular.name}>
 							<div className="flex items-center justify-between font-semibold">
 								{extracurricular.link ? (
@@ -478,7 +483,7 @@ export default function Home() {
 
 			<Section title="🏆 COMPETITIONS">
 				<ul className="list-disc pl-4">
-					{data.competitions.map((competition) => (
+					{profileData.competitions.map((competition) => (
 						<li key={competition.name}>
 							<div className="flex items-center justify-between">
 								{competition.name}

@@ -17,6 +17,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import ThemeSwitch from '@/components/theme-switch'
+import CowSay from '@/components/cowsay'
 import { getDurationString } from '@/lib/utils'
 
 library.add(fab)
@@ -534,6 +535,12 @@ export default async function Home() {
 					))}
 				</ul>
 			</Section>
+
+			{!isResume && (
+				<div className="flex w-full justify-end">
+					<CowSay />
+				</div>
+			)}
 
 			<Footer profileData={profileData} />
 		</main>

@@ -12,7 +12,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faArrowUpRightFromSquare,
-	faEnvelope,
+	faCopyright,
 	faGlobe,
 } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -65,15 +65,19 @@ function Link({
 function Header() {
 	return isResume ? (
 		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
-			<Link color="foreground" href="mailto:hello@ansht.com">
-				<span className="text-[#52525B] dark:text-[#D4D4D8]">
-					📧 hello@ansht.com
-				</span>
+			<Link
+				className="text-[#52525B] dark:text-[#D4D4D8]"
+				color="foreground"
+				href="mailto:hello@ansht.com"
+			>
+				📧 hello@ansht.com
 			</Link>
-			<Link color="foreground" href="tel:+919075055300">
-				<span className="text-[#52525B] dark:text-[#D4D4D8]">
-					📞 +91 9075055300
-				</span>
+			<Link
+				className="text-[#52525B] dark:text-[#D4D4D8]"
+				color="foreground"
+				href="tel:+919075055300"
+			>
+				📞 +91 9075055300
 			</Link>
 		</header>
 	) : (
@@ -82,10 +86,12 @@ function Header() {
 				ANSH TIWATNE
 			</p>
 			<nav data-nosnippet className="flex items-center gap-2 font-medium">
-				<Link color="foreground" href="https://github.com/anshtiwatne">
-					<span className="text-[#52525B] dark:text-[#D4D4D8]">
-						🔗 GitHub
-					</span>
+				<Link
+					color="foreground"
+					className="text-[#52525B] dark:text-[#D4D4D8]"
+					href="https://github.com/anshtiwatne"
+				>
+					📧 Contact
 				</Link>
 				|
 				<ThemeSwitch />
@@ -98,14 +104,21 @@ function Header() {
 function Footer({ profileData }: { profileData: any }) {
 	return (
 		<footer className="flex items-center justify-between pt-10">
-			<Link
-				className="flex items-center gap-2 text-[#52525B] dark:text-[#D4D4D8]"
-				color="foreground"
-				href="https://ansht.com"
-			>
-				<FontAwesomeIcon icon={faGlobe} size="lg" />
-				<span>ansht.com</span>
-			</Link>
+			{isResume ? (
+				<Link
+					className="flex items-center gap-2 text-[#52525B] dark:text-[#D4D4D8]"
+					color="foreground"
+					href="https://ansht.com"
+				>
+					<FontAwesomeIcon icon={faGlobe} size="lg" />
+					<span>ansht.com</span>
+				</Link>
+			) : (
+				<div className="flex items-center gap-2 text-[#52525B] dark:text-[#D4D4D8]">
+					<FontAwesomeIcon icon={faCopyright} />
+					<span>Ansh Tiwatne</span>
+				</div>
+			)}
 			<div className="flex items-center gap-4">
 				{profileData.profiles.map((profile) => (
 					<Link
@@ -120,13 +133,6 @@ function Footer({ profileData }: { profileData: any }) {
 						/>
 					</Link>
 				))}
-				<Link
-					className="text-[#52525B] dark:text-[#D4D4D8]"
-					color="foreground"
-					href="mailto:ansh.tiwatne@gmail.com"
-				>
-					<FontAwesomeIcon icon={faEnvelope} size="lg" />
-				</Link>
 			</div>
 		</footer>
 	)

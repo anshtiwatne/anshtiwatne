@@ -12,9 +12,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faArrowUpRightFromSquare,
-	faCopyright,
 	faGlobe,
 } from '@fortawesome/free-solid-svg-icons'
+import { faCopyright } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import ThemeSwitch from '@/components/theme-switch'
 import CowSay from '@/components/cowsay'

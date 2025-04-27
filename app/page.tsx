@@ -170,7 +170,7 @@ export default async function Home() {
 				{isResume ? (
 					<span className="ml-1">Ansh Tiwatne</span>
 				) : (
-					<span className="ml-[-0.5rem]">👋 Hi, I'm Ansh</span>
+					<span className="sm:ml-[-0.5rem]">👋 Hi, I'm Ansh</span>
 				)}
 			</p>
 			<p itemProp="description" className={isResume ? 'ml-1' : 'ml-2'}>

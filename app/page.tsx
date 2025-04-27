@@ -21,7 +21,7 @@ import { getDurationString } from '@/lib/utils'
 
 library.add(fab)
 
-const isResume = true
+const isResume = false
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)

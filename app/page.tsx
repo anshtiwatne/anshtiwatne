@@ -21,7 +21,7 @@ import { getDurationString } from '@/lib/utils'
 
 library.add(fab)
 
-const isResume = false
+const isResume = true
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -165,13 +165,14 @@ export default async function Home() {
 		>
 			<Header />
 
-			<p
-				data-nosnippet
-				className="mb-[-1rem] ml-[-0.5rem] pt-4 text-4xl font-bold"
-			>
-				{isResume ? 'Ansh Tiwatne' : "👋 Hi, I'm Ansh"}
+			<p data-nosnippet className="mb-[-1rem] pt-4 text-4xl font-bold">
+				{isResume ? (
+					<span className="ml-1">Ansh Tiwatne</span>
+				) : (
+					<span className="ml-[-0.5rem]">👋 Hi, I'm Ansh</span>
+				)}
 			</p>
-			<p itemProp="description" className="ml-2">
+			<p itemProp="description" className={isResume ? 'ml-1' : 'ml-2'}>
 				Software Developer at{' '}
 				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
 				and <Link href="https://dlrc.in">DLRC</Link> Alumnus. I

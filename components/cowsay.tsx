@@ -2,20 +2,19 @@ import Link from '@/components/link'
 
 export default function CowSay() {
 	return (
-		<pre className="text-left" style={{ fontFamily: 'monospace' }}>
-			{`
- ___________
+		<pre className="pt-4 text-left" style={{ fontFamily: 'monospace' }}>
+			{` ______________
 < `}
 			{
 				<Link
 					href="https://github.com/anshtiwatne/anshtiwatne/blob/main/lib/profile-data.yml"
 					target="_blank"
 				>
-					View YAML
+					View as YAML
 				</Link>
 			}
 			{` >
- -----------
+ --------------
         \\   ^__^
          \\  (oo)\_______
             (__)\       )\/\\

@@ -7,7 +7,9 @@ import { ThemeProvider } from 'next-themes'
 const monaSans = Mona_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://ansht.com'),
 	title: 'Ansh Tiwatne',
+	description: 'Portfolio of Ansh Tiwatne',
 }
 
 const jsonLd = {
@@ -53,7 +55,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html suppressHydrationWarning lang="en">
-			<body className={`${monaSans.className} antialiased bg-white dark:bg-[#1A1B1E]`}>
+			<body
+				className={`${monaSans.className} bg-white antialiased dark:bg-[#1A1B1E]`}
+			>
 				<ThemeProvider attribute="class">{children}</ThemeProvider>
 			</body>
 			<Script

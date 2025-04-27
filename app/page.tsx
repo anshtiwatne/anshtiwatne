@@ -1,27 +1,37 @@
 /* eslint-disable react/no-unescaped-entities */
-'use client'
+
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+import fs from 'fs/promises'
+import path from 'path'
+import YAML from 'yaml'
+import { fileURLToPath } from 'url'
 
 import NextLink from 'next/link'
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faArrowUpRightFromSquare,
+	faEnvelope,
 	faGlobe,
 } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import ThemeSwitch from '@/components/theme-switch'
-import profileData from '@/lib/profile-data'
+import { getDurationString } from '@/lib/utils'
+
+library.add(fab)
 
 const isResume = false
 
-function getDurationString(startDate: Date, endDate: Date | null) {
-	const options: Intl.DateTimeFormatOptions = {
-		month: 'short',
-		year: 'numeric',
-	}
-	const start = startDate.toLocaleDateString('en-US', options)
-	const end = endDate
-		? endDate.toLocaleDateString('en-US', options)
-		: 'present'
-	return `${start} - ${end}`
+async function getProfileData(): Promise<unknown> {
+	const __filename = fileURLToPath(import.meta.url)
+	const __dirname = path.dirname(__filename)
+
+	const filePath = path.join(__dirname, '..', 'lib', 'profile-data.yml')
+	const fileContents = await fs.readFile(filePath, { encoding: 'utf-8' })
+	const data = YAML.parse(fileContents, { customTags: ['timestamp'] })
+
+	return data
 }
 
 function Link({
@@ -84,7 +94,8 @@ function Header() {
 	)
 }
 
-function Footer() {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function Footer({ profileData }: { profileData: any }) {
 	return (
 		<footer className="flex items-center justify-between pt-10">
 			<Link
@@ -103,9 +114,19 @@ function Footer() {
 						color="foreground"
 						href={profile.link}
 					>
-						<FontAwesomeIcon icon={profile.icon} size="lg" />
+						<FontAwesomeIcon
+							icon={['fab', profile.icon]}
+							size="lg"
+						/>
 					</Link>
 				))}
+				<Link
+					className="text-[#52525B] dark:text-[#D4D4D8]"
+					color="foreground"
+					href="mailto:ansh.tiwatne@gmail.com"
+				>
+					<FontAwesomeIcon icon={faEnvelope} size="lg" />
+				</Link>
 			</div>
 		</footer>
 	)
@@ -120,13 +141,16 @@ function Section({
 }) {
 	return (
 		<div className="flex flex-col gap-2">
-			<p className="ml-[-0.25rem] text-lg font-bold">{title}</p>
-			<div className="flex flex-col gap-2">{children}</div>
+			<p className="text-lg font-bold">{title}</p>
+			<div className="ml-2 flex flex-col gap-2">{children}</div>
 		</div>
 	)
 }
 
-export default function Home() {
+export default async function Home() {
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	const profileData: any = await getProfileData()
+
 	return (
 		<main
 			itemScope
@@ -135,10 +159,13 @@ export default function Home() {
 		>
 			<Header />
 
-			<p data-nosnippet className="mb-[-1rem] pt-4 text-4xl font-bold">
+			<p
+				data-nosnippet
+				className="mb-[-1rem] ml-[-0.5rem] pt-4 text-4xl font-bold"
+			>
 				{isResume ? 'Ansh Tiwatne' : "👋 Hi, I'm Ansh"}
 			</p>
-			<p itemProp="description">
+			<p itemProp="description" className="ml-2">
 				Software Developer at{' '}
 				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
 				and <Link href="https://dlrc.in">DLRC</Link> Alumnus. I
@@ -501,7 +528,7 @@ export default function Home() {
 				</ul>
 			</Section>
 
-			<Footer />
+			<Footer profileData={profileData} />
 		</main>
 	)
 }

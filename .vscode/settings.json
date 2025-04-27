@@ -1,0 +1,6 @@
+{
+	"yaml.schemas": {
+		"file:///c%3A/Users/ansht/.vscode/extensions/atlassian.atlascode-3.6.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+		"https://json.schemastore.org/yamllint.json": "file:///c%3A/Users/ansht/Documents/GitHub/anshtiwatne/lib/profile-data.yml"
+	}
+}

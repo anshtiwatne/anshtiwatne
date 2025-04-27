@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/link'
 
 export default function CowSay() {
 	return (
@@ -9,7 +9,7 @@ export default function CowSay() {
 			{
 				<Link
 					href="https://github.com/anshtiwatne/anshtiwatne/blob/main/lib/profile-data.yml"
-					className="text-blue-600 underline-offset-2 hover:underline"
+					target="_blank"
 				>
 					View YAML
 				</Link>

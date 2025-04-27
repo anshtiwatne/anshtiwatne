@@ -7,7 +7,6 @@ import path from 'path'
 import YAML from 'yaml'
 import { fileURLToPath } from 'url'
 
-import NextLink from 'next/link'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -18,11 +17,12 @@ import { faCopyright } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import ThemeSwitch from '@/components/theme-switch'
 import CowSay from '@/components/cowsay'
+import Link from '@/components/link'
 import { getDurationString } from '@/lib/utils'
 
 library.add(fab)
 
-const isResume = false
+const isResume = true
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -33,34 +33,6 @@ async function getProfileData(): Promise<unknown> {
 	const data = YAML.parse(fileContents, { customTags: ['timestamp'] })
 
 	return data
-}
-
-function Link({
-	href,
-	target,
-	color,
-	className,
-	children,
-}: {
-	href: string
-	target?: string
-	color?: string
-	className?: string
-	children: React.ReactNode
-}) {
-	return (
-		<NextLink
-			className={
-				color === 'foreground'
-					? className
-					: `text-blue-600 ${className}`
-			}
-			href={href}
-			target={target}
-		>
-			{children}
-		</NextLink>
-	)
 }
 
 function Header() {

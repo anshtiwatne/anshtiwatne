@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html suppressHydrationWarning lang="en">
-			<body className={`${monaSans.className} antialiased`}>
+			<body className={`${monaSans.className} antialiased bg-white dark:bg-[#1A1B1E]`}>
 				<ThemeProvider attribute="class">{children}</ThemeProvider>
 			</body>
 			<Script

@@ -1,3 +1,15 @@
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@media print {
+	html,
+	body {
+		print-color-adjust: exact;
+		-webkit-print-color-adjust: exact;
+	}
+
+	@page {
+		size: A4 portrait;
+	}
+}

@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/no-unescaped-entities */
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import fs from 'fs/promises'
 import path from 'path'
-import YAML from 'yaml'
 import { fileURLToPath } from 'url'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import YAML from 'yaml'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faArrowUpRightFromSquare,
@@ -15,14 +16,16 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { faCopyright } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+
 import ThemeSwitch from '@/components/theme-switch'
 import CowSay from '@/components/cowsay'
 import Link from '@/components/link'
 import { getDurationString } from '@/lib/utils'
 
+config.autoAddCss = false
 library.add(fab)
 
-const isResume = false
+const DISPLAY_MODE = process.env.DISPLAY_MODE as 'website' | 'resume'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -36,7 +39,7 @@ async function getProfileData(): Promise<unknown> {
 }
 
 function Header() {
-	return isResume ? (
+	return DISPLAY_MODE === 'resume' ? (
 		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
 			<Link
 				className="text-[#52525B] dark:text-[#D4D4D8]"
@@ -55,14 +58,18 @@ function Header() {
 		</header>
 	) : (
 		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
-			<p itemProp="name" className="font-bold tracking-wide">
+			<Link
+				href="https://ansht.com"
+				className="font-bold tracking-wide"
+				color="foreground"
+			>
 				ANSH TIWATNE
-			</p>
+			</Link>
 			<nav data-nosnippet className="flex items-center gap-2 font-medium">
 				<Link
 					color="foreground"
 					className="text-[#52525B] dark:text-[#D4D4D8]"
-					href="https://github.com/anshtiwatne"
+					href="mailto:ansh.tiwatne@gmail.com"
 				>
 					📧 Contact
 				</Link>
@@ -73,11 +80,10 @@ function Header() {
 	)
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Footer({ profileData }: { profileData: any }) {
 	return (
 		<footer className="flex items-center justify-between pt-10">
-			{isResume ? (
+			{DISPLAY_MODE === 'resume' ? (
 				<Link
 					className="flex items-center gap-2 text-[#52525B] dark:text-[#D4D4D8]"
 					color="foreground"
@@ -127,7 +133,6 @@ function Section({
 }
 
 export default async function Home() {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const profileData: any = await getProfileData()
 
 	return (
@@ -139,13 +144,16 @@ export default async function Home() {
 			<Header />
 
 			<p data-nosnippet className="mb-[-1rem] pt-4 text-4xl font-bold">
-				{isResume ? (
+				{DISPLAY_MODE === 'resume' ? (
 					<span className="ml-1">Ansh Tiwatne</span>
 				) : (
 					<span className="sm:ml-[-0.5rem]">👋 Hi, I'm Ansh</span>
 				)}
 			</p>
-			<p itemProp="description" className={isResume ? 'ml-1' : 'ml-2'}>
+			<p
+				itemProp="description"
+				className={DISPLAY_MODE === 'resume' ? 'ml-1' : 'ml-2'}
+			>
 				Software Developer at{' '}
 				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
 				and <Link href="https://dlrc.in">DLRC</Link> Alumnus. I
@@ -508,7 +516,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			{!isResume && (
+			{!DISPLAY_MODE && (
 				<div className="flex w-full justify-end">
 					<CowSay />
 				</div>

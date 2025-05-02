@@ -59,7 +59,7 @@ function Header() {
 	) : (
 		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
 			<Link
-				href="https://ansht.com"
+				href="/"
 				className="font-bold tracking-wide"
 				color="foreground"
 			>
@@ -516,9 +516,9 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			{!DISPLAY_MODE && (
+			{DISPLAY_MODE === 'website' && (
 				<div className="flex w-full justify-end">
-					<CowSay />
+					<CowSay text="View as PDF" link="/cv" />
 				</div>
 			)}
 

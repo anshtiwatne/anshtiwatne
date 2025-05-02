@@ -1,20 +1,17 @@
 import Link from '@/components/link'
 
-export default function CowSay() {
+export default function CowSay({ text, link }: { text: string; link: string }) {
 	return (
 		<pre className="pt-4 text-left" style={{ fontFamily: 'monospace' }}>
-			{` ______________
+			{` ${'_'.repeat(text.length + 2)}
 < `}
 			{
-				<Link
-					href="https://github.com/anshtiwatne/anshtiwatne/blob/main/lib/profile-data.yml"
-					target="_blank"
-				>
-					View as YAML
+				<Link href={link} target="_blank">
+					{text}
 				</Link>
 			}
 			{` >
- --------------
+ ${'-'.repeat(text.length + 2)}
         \\   ^__^
          \\  (oo)\_______
             (__)\       )\/\\

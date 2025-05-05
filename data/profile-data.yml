@@ -64,6 +64,15 @@ workExperience:
       - title: Project Certificate
         link: https://drive.google.com/file/d/1q3bz5p1evIOMchaBrveo0v6lRMH4r2ej
 
+  - role: Computer Science Teacher
+    org: DLRC
+    orgLink: https://dlrc.in
+    startDate: 2024-06-01
+    endDate: null
+    description: >
+      Teaching A-level Computer Science to grade 12 at DLRC.
+    attachments: []
+
   - role: Tech Intern
     org: 1point01
     orgLink: https://1point01.com
@@ -307,16 +316,6 @@ extracurriculars:
       awards. Designed posters and messages to promote the event to schools and
       communities. Authored coding challenges. Organized an award ceremony.
       Recruited and now mentoring 3 students to take lead for future events.
-    attachments: []
-
-  - name: Teaching A-level Computer Science
-    link: null
-    startDate: 2024-06-01
-    endDate: null
-    description: >
-      Taught the A-level CS to 12th grade. Organized classes 4x/wk. Maintained a
-      lesson plan. Planned mock exams and gave students feedback on answers,
-      improving grades ~20% from the previous year. Handled exam setup for school.
     attachments: []
 
   - name: Co-Led School's CS-Club

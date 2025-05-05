@@ -20,18 +20,18 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import ThemeSwitch from '@/components/theme-switch'
 import CowSay from '@/components/cowsay'
 import Link from '@/components/link'
-import { getDurationString } from '@/lib/utils'
+import TimeDuration from '@/components/time-duration'
 
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'resume' = 'website'
+const DISPLAY_MODE: 'website' | 'resume' = 'resume'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
 	const __dirname = path.dirname(__filename)
 
-	const filePath = path.join(__dirname, '..', 'lib', 'profile-data.yml')
+	const filePath = path.join(__dirname, '..', 'data', 'profile-data.yml')
 	const fileContents = await fs.readFile(filePath, { encoding: 'utf-8' })
 	const data = YAML.parse(fileContents, { customTags: ['timestamp'] })
 
@@ -156,9 +156,9 @@ export default async function Home() {
 			>
 				Software Developer at{' '}
 				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
-				and <Link href="https://dlrc.in">DLRC</Link> Alumnus. I
-				primarily work with Python, TypeScript, and React, specializing
-				in web development.
+				and computer science teacher at{' '}
+				<Link href="https://dlrc.in">DLRC</Link>. I primarily work with
+				Python, TypeScript, and React, specializing in web development.
 			</p>
 
 			<Section title="⚒️ PROJECTS">
@@ -203,12 +203,10 @@ export default async function Home() {
 										experience.org
 									)}
 								</span>
-								<span>
-									{getDurationString(
-										experience.startDate,
-										experience.endDate,
-									)}
-								</span>
+								<TimeDuration
+									startDate={experience.startDate}
+									endDate={experience.endDate}
+								/>
 							</div>
 							<p>{experience.description}</p>
 							<div className="flex items-center gap-4">
@@ -248,12 +246,10 @@ export default async function Home() {
 										internship.org
 									)}
 								</span>
-								<span>
-									{getDurationString(
-										internship.startDate,
-										internship.endDate,
-									)}
-								</span>
+								<TimeDuration
+									startDate={internship.startDate}
+									endDate={internship.endDate}
+								/>
 							</div>
 							<p>{internship.description}</p>
 							<div className="flex items-center gap-4">
@@ -278,7 +274,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<div className="flex justify-between">
+			<div className="flex flex-col sm:flex-row gap-8 justify-between">
 				<Section title="🖥️ LANGUAGES (computer)">
 					<ul className="list-disc pl-4">
 						{profileData.computerLanguages.map((language) => (
@@ -288,7 +284,7 @@ export default async function Home() {
 						))}
 					</ul>
 				</Section>
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-8 sm:gap-4">
 					<Section title="🌐 LANGUAGES (human)">
 						<ul className="list-disc pl-4">
 							{profileData.humanLanguages.map((language) => (
@@ -323,12 +319,10 @@ export default async function Home() {
 										service.org
 									)}
 								</span>
-								<span>
-									{getDurationString(
-										service.startDate,
-										service.endDate,
-									)}
-								</span>
+								<TimeDuration
+									startDate={service.startDate}
+									endDate={service.endDate}
+								/>
 							</div>
 							<p>{service.description}</p>
 							<div className="flex items-center gap-4">
@@ -359,7 +353,7 @@ export default async function Home() {
 			</Section>
 
 			<Section title="📝 EDUCATION & TESTING">
-				<div className="flex justify-between">
+				<div className="flex flex-col justify-between gap-2 sm:flex-row">
 					{profileData.boardExams.map((exam) => (
 						<div key={exam.qualification}>
 							<p className="font-semibold">
@@ -375,7 +369,7 @@ export default async function Home() {
 						</div>
 					))}
 				</div>
-				<div className="flex justify-between pt-1">
+				<div className="flex flex-col justify-between pt-1 sm:flex-row">
 					<span>
 						<span className="font-semibold">SAT</span> (superscore):
 						1530/1600
@@ -400,12 +394,10 @@ export default async function Home() {
 								) : (
 									program.name
 								)}
-								<span>
-									{getDurationString(
-										program.startDate,
-										program.endDate,
-									)}
-								</span>
+								<TimeDuration
+									startDate={program.startDate}
+									endDate={program.endDate}
+								/>
 							</div>
 							<p>{program.description}</p>
 							<div className="flex items-center gap-4">
@@ -458,12 +450,10 @@ export default async function Home() {
 								) : (
 									extracurricular.name
 								)}
-								<span>
-									{getDurationString(
-										extracurricular.startDate,
-										extracurricular.endDate,
-									)}
-								</span>
+								<TimeDuration
+									startDate={extracurricular.startDate}
+									endDate={extracurricular.endDate}
+								/>
 							</div>
 							<p>{extracurricular.description}</p>
 							<div className="flex items-center gap-4">

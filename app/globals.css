@@ -10,6 +10,8 @@
 	}
 
 	@page {
+		page-orientation: upright;
 		size: A4 portrait;
+		margin: 10mm 15mm;
 	}
 }

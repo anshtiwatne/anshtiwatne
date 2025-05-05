@@ -156,7 +156,7 @@ export default async function Home() {
 			>
 				Software Developer at{' '}
 				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
-				and computer science teacher at{' '}
+				and Computer Science Teacher at{' '}
 				<Link href="https://dlrc.in">DLRC</Link>. I primarily work with
 				Python, TypeScript, and React, specializing in web development.
 			</p>

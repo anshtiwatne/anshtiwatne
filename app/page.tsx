@@ -139,7 +139,7 @@ export default async function Home() {
 		<main
 			itemScope
 			itemType="https://schema.org/Person"
-			className="mx-auto flex max-w-3xl flex-col gap-8 p-4 tracking-wide text-[#27272A] dark:text-[#F4F4F5]"
+			className={`${DISPLAY_MODE === 'website' ? 'leading-relaxed' : ''} mx-auto flex max-w-3xl flex-col gap-8 p-4 tracking-wide text-[#27272A] dark:text-[#F4F4F5]`}
 		>
 			<Header />
 
@@ -274,7 +274,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<div className="flex flex-col sm:flex-row gap-8 justify-between">
+			<div className="flex flex-col justify-between gap-8 sm:flex-row">
 				<Section title="🖥️ LANGUAGES (computer)">
 					<ul className="list-disc pl-4">
 						{profileData.computerLanguages.map((language) => (

@@ -67,7 +67,7 @@ workExperience:
   - role: Computer Science Teacher
     org: DLRC
     orgLink: https://dlrc.in
-    startDate: 2024-06-01
+    startDate: 2024-06-12
     endDate: null
     description: >
       Teaching A-level Computer Science to grade 12 at DLRC.
@@ -89,8 +89,8 @@ workExperience:
   - role: Tech Intern
     org: WeShineTech
     orgLink: https://www.weshinetech.in
-    startDate: 2020-05-01
-    endDate: 2020-06-01
+    startDate: 2021-04-05
+    endDate: 2021-05-25
     description: >
       Provided chat support. Created video tutorials. Improved social media
       presence. Made minor improvements to their website.
@@ -103,7 +103,7 @@ internships:
     org: DLRC News Network
     orgLink: https://dlrc.in
     startDate: 2022-06-01
-    endDate: 2024-12-01
+    endDate: 2024-12-21
     description: >
       Developed and published the DLRC Daily app as a platform for sharing
       short-form news and updates across our school community, bringing it closer
@@ -186,7 +186,7 @@ communityService:
   - role: Volunteer/Mentor
     org: Living Academy
     orgLink: https://www.livingacademy.org
-    startDate: 2024-06-01
+    startDate: 2024-06-26
     endDate: null
     description: >
       Teaching basic programming and mentoring kids in under-resourced
@@ -235,7 +235,7 @@ boardExams:
         grade: A*
 
   - qualification: AS Levels
-    year: 2023
+    year: 2024
     subjects:
       - name: Physics
         grade: A
@@ -249,7 +249,7 @@ boardExams:
         grade: IP
 
   - qualification: A Levels
-    year: 2024
+    year: 2025
     subjects:
       - name: Physics
         grade: IP

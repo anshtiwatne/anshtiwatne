@@ -248,15 +248,15 @@ boardExams:
       - name: Computer Science
         grade: A
       - name: General English
-        grade: IP
+        grade: A
 
   - qualification: A Levels
     year: 2025
     subjects:
       - name: Physics
-        grade: IP
+        grade: A*
       - name: Mathematics
-        grade: IP
+        grade: A*
       - name: Computer Science
         grade: A*
 

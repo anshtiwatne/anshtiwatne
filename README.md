@@ -1,7 +1,7 @@
 ## 👋 Hi, I'm Ansh
 
-- Software Developer at [Inspirit Vision](https://inspiritvision.com) and [DLRC](https://dlrc.in) Alumnus
-- I primarily work with Python, TypeScript, and React, specializing in web development.
+- Software Developer at [Inspirit Vision](https://inspiritvision.com) and Computer Science Teacher at [DLRC](https://dlrc.in)
+- I primarily work with Python, TypeScript, and React, specializing in web development
 - I'm currently learning Rust 🦀
 
 You can learn more about me on [my website](https://ansht.com/)

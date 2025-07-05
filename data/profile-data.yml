@@ -1,353 +1,311 @@
 profiles:
-    - link: https://g.co/kgs/jJKkRNG
-      icon: google
-
-    - link: https://github.com/anshtiwatne
-      icon: github
-
-    - link: https://www.linkedin.com/in/ansht
-      icon: linkedin
-
-    - link: https://x.com/anshtiwatne
-      icon: x-twitter
-
-    - link: https://www.instagram.com/anshtiwatne
-      icon: instagram
-
+  - link: 'https://g.co/kgs/jJKkRNG'
+    icon: google
+  - link: 'https://github.com/anshtiwatne'
+    icon: github
+  - link: 'https://www.linkedin.com/in/ansht'
+    icon: linkedin
+  - link: 'https://x.com/anshtiwatne'
+    icon: x-twitter
+  - link: 'https://www.instagram.com/anshtiwatne'
+    icon: instagram
 projects:
-    - name: DLRC Daily
-      link: https://daily.dlrc.in
-      description: >
-          A short form news app (like Inshorts) developed for my school community,
-          built in Next.js with a Firebase backend.
-
-    - name: Prana Daan
-      link: https://play.google.com/store/apps/details?id=com.inspiritvision.pranadaan.twa
-      description: >
-          React app for managing registrations and automating processes for semiannual
-          blood donation drives at Inspirit Vision.
-
-    - name: Chalo Daudne
-      link: https://play.google.com/store/apps/details?id=in.chalodaudne.twa
-      description: >
-          React app for tracking runners, generating certificates and managing
-          volunteers during biannual community marathons at Inspirit Vision.
-
-    - name: DLRC Weather
-      link: https://weather.dlrc.in
-      description: >
-          A Raspberry Pi weather station installed in my school that records and
-          displays real-time weather data on a website.
-
-    - name: Wordle Solver
-      link: https://ansht.stck.me/post/16674/Hello-Wordle
-      description: >
-          An efficient Wordle solving algorithm and scraper written in Python using
-          Playwright, as a learning project.
-
+  - name: DLRC Daily
+    link: 'https://daily.dlrc.in'
+    description: >
+      A short form news app (like Inshorts) developed for my school community,
+      built in Next.js with a Firebase backend.
+  - name: Prana Daan
+    link: >-
+      https://play.google.com/store/apps/details?id=com.inspiritvision.pranadaan.twa
+    description: >
+      React app for managing registrations and automating processes for
+      semiannual blood donation drives at Inspirit Vision.
+  - name: Chalo Daudne
+    link: 'https://play.google.com/store/apps/details?id=in.chalodaudne.twa'
+    description: >
+      React app for tracking runners, generating certificates and managing
+      volunteers during biannual community marathons at Inspirit Vision.
+  - name: DLRC Weather
+    link: 'https://weather.dlrc.in'
+    description: >
+      A Raspberry Pi weather station installed in my school that records and
+      displays real-time weather data on a website.
+  - name: Wordle Solver
+    link: 'https://ansht.stck.me/post/16674/Hello-Wordle'
+    description: >
+      An efficient Wordle solving algorithm and scraper written in Python using
+      Playwright, as a learning project.
 workExperience:
-    - role: Software Engineer
-      org: NeuraSee
-      orgLink: null
-      startDate: 2025-06-29
-      endDate: null
-      description: >
-          Developing a web portal for that leverages Magnetic Flux Leakage (MFL) data for AI-driven defect detection in Oil & Gas pipelines.
-      attachments: []
-
-    - role: Software Developer
-      org: Inspirit Vision
-      orgLink: https://inspiritvision.com
-      startDate: 2023-10-01
-      endDate: null
-      description: >
-          Developing apps to advance CSR initiatives and automate processes for hundreds of users during company-wide events.
-      attachments:
-          - title: Recommendation
-            link: https://drive.google.com/file/d/1mhjKurLOWpZZxafWUT_YqvkaYn7JOrB3
-          - title: Project Certificate
-            link: https://drive.google.com/file/d/1q3bz5p1evIOMchaBrveo0v6lRMH4r2ej
-
-    - role: Computer Science Teacher
-      org: DLRC
-      orgLink: https://dlrc.in
-      startDate: 2024-06-12
-      endDate: null
-      description: >
-          Teaching A-level Computer Science to grade 12 at DLRC.
-      attachments: []
-
-    - role: Tech Intern
-      org: 1point01
-      orgLink: https://1point01.com
-      startDate: 2022-04-01
-      endDate: 2022-06-01
-      description: >
-          Involved creating a pamphlet program for NGOs to communicate their objectives better and developed a Jekyll website, serving as an NGO directory.
-      attachments:
-          - title: Certificate of Internship
-            link: https://drive.google.com/file/d/1D7jHguOCFYTmwKFYlaNIDLzQP9o30UFZ
-
-    - role: Tech Intern
-      org: WeShineTech
-      orgLink: https://www.weshinetech.in
-      startDate: 2021-04-05
-      endDate: 2021-05-25
-      description: >
-          Provided chat support. Created video tutorials. Improved social media presence. Made minor improvements to their website.
-      attachments:
-          - title: Internship Letter
-            link: https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma
-
+  - role: Software Engineer
+    org: NeuraSee
+    orgLink: null
+    startDate: 2025-06-29T00:00:00.000Z
+    endDate: null
+    description: >
+      Developing a web portal for that leverages Magnetic Flux Leakage (MFL)
+      data for AI-driven defect detection in Oil & Gas pipelines.
+    attachments: []
+  - role: Software Developer
+    org: Inspirit Vision
+    orgLink: 'https://inspiritvision.com'
+    startDate: 2023-10-01T00:00:00.000Z
+    endDate: null
+    description: >
+      Developing apps to advance CSR initiatives and automate processes for
+      hundreds of users during company-wide events.
+    attachments:
+      - title: Recommendation
+        link: 'https://drive.google.com/file/d/1mhjKurLOWpZZxafWUT_YqvkaYn7JOrB3'
+      - title: Project Certificate
+        link: 'https://drive.google.com/file/d/1q3bz5p1evIOMchaBrveo0v6lRMH4r2ej'
+  - role: Computer Science Teacher
+    org: DLRC
+    orgLink: 'https://dlrc.in'
+    startDate: 2024-06-12T00:00:00.000Z
+    endDate: null
+    description: |
+      Teaching A-level Computer Science to grade 12 at DLRC.
+    attachments: []
+  - role: Tech Intern
+    org: 1point01
+    orgLink: 'https://1point01.com'
+    startDate: 2022-04-01T00:00:00.000Z
+    endDate: 2022-06-01T00:00:00.000Z
+    description: >
+      Involved creating a pamphlet program for NGOs to communicate their
+      objectives better and developed a Jekyll website, serving as an NGO
+      directory.
+    attachments:
+      - title: Certificate of Internship
+        link: 'https://drive.google.com/file/d/1D7jHguOCFYTmwKFYlaNIDLzQP9o30UFZ'
+  - role: Tech Intern
+    org: WeShineTech
+    orgLink: 'https://www.weshinetech.in'
+    startDate: 2021-04-05T00:00:00.000Z
+    endDate: 2021-05-25T00:00:00.000Z
+    description: >
+      Provided chat support. Created video tutorials. Improved social media
+      presence. Made minor improvements to their website.
+    attachments:
+      - title: Internship Letter
+        link: 'https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma'
 internships:
-    - role: App Developer & Editor
-      org: DLRC News Network
-      orgLink: https://dlrc.in
-      startDate: 2022-06-01
-      endDate: 2024-12-21
-      description: >
-          Developed and published the DLRC Daily app as a platform for sharing
-          short-form news and updates across our school community, bringing it closer
-          together. Led a team of interns in publishing stories. Designed and helped
-          compile our first school magazine.
-      attachments:
-          - title: Letter of Appreciation
-            link: https://drive.google.com/file/d/18c21FEawh8s9wqe26yYmFsn6TcXKtEqe
-
-    - role: Physics Lab Intern
-      org: DLRC
-      orgLink: https://dlrc.in
-      startDate: 2022-08-01
-      endDate: 2024-03-01
-      description: >
-          Prepared experiment setups for high school lab sessions. Organized and
-          maintained lab instruments. Assisted in teaching experimental Physics.
-          Performed demonstrations for school fairs.
-      attachments:
-          - title: Letter of Appreciation
-            link: https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls
-
-    - role: Math & Science Learning Support Intern
-      org: DLRC
-      orgLink: https://dlrc.in
-      startDate: 2022-08-01
-      endDate: 2022-10-01
-      description: >
-          Helped students with doubts. Checked tests and homework. Planned
-          experiments for middle school Math and science classes.
-      attachments:
-          - title: Letter of Appreciation
-            link: https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls
-
+  - role: App Developer & Editor
+    org: DLRC News Network
+    orgLink: 'https://dlrc.in'
+    startDate: 2022-06-01T00:00:00.000Z
+    endDate: 2024-12-21T00:00:00.000Z
+    description: >
+      Developed and published the DLRC Daily app as a platform for sharing
+      short-form news and updates across our school community, bringing it
+      closer together. Led a team of interns in publishing stories. Designed and
+      helped compile our first school magazine.
+    attachments:
+      - title: Letter of Appreciation
+        link: 'https://drive.google.com/file/d/18c21FEawh8s9wqe26yYmFsn6TcXKtEqe'
+  - role: Physics Lab Intern
+    org: DLRC
+    orgLink: 'https://dlrc.in'
+    startDate: 2022-08-01T00:00:00.000Z
+    endDate: 2024-03-01T00:00:00.000Z
+    description: >
+      Prepared experiment setups for high school lab sessions. Organized and
+      maintained lab instruments. Assisted in teaching experimental Physics.
+      Performed demonstrations for school fairs.
+    attachments:
+      - title: Letter of Appreciation
+        link: 'https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls'
+  - role: Math & Science Learning Support Intern
+    org: DLRC
+    orgLink: 'https://dlrc.in'
+    startDate: 2022-08-01T00:00:00.000Z
+    endDate: 2022-10-01T00:00:00.000Z
+    description: >
+      Helped students with doubts. Checked tests and homework. Planned
+      experiments for middle school Math and science classes.
+    attachments:
+      - title: Letter of Appreciation
+        link: 'https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls'
 computerLanguages:
-    - name: Python
-      proficiency: advanced
-
-    - name: JavaScript
-      proficiency: intermediate
-
-    - name: TypeScript
-      proficiency: intermediate
-
-    - name: Bash
-      proficiency: intermediate
-
-    - name: HTML & CSS + Tailwind
-      proficiency: advanced
-
-    - name: SQL
-      proficiency: beginner
-
-    - name: QBasic
-      proficiency: intermediate
-
-    - name: Prolog
-      proficiency: working knowledge
-
-    - name: x86 Assembly
-      proficiency: working knowledge
-
+  - name: Python
+    proficiency: advanced
+  - name: JavaScript
+    proficiency: intermediate
+  - name: TypeScript
+    proficiency: intermediate
+  - name: Bash
+    proficiency: intermediate
+  - name: HTML & CSS + Tailwind
+    proficiency: advanced
+  - name: SQL
+    proficiency: beginner
+  - name: QBasic
+    proficiency: intermediate
+  - name: Prolog
+    proficiency: working knowledge
+  - name: x86 Assembly
+    proficiency: working knowledge
 humanLanguages:
-    - name: English
-      proficiency: native
-
-    - name: Hindi
-      proficiency: proficient
-
-    - name: Marathi
-      proficiency: native
-
+  - name: English
+    proficiency: native
+  - name: Hindi
+    proficiency: proficient
+  - name: Marathi
+    proficiency: native
 skills:
-    - React + Next.js
-    - Firebase
-    - Linux
-    - Git & GitHub
-
+  - React + Next.js
+  - Firebase
+  - Linux
+  - Git & GitHub
 communityService:
-    - role: Volunteer/Mentor
-      org: Living Academy
-      orgLink: https://www.livingacademy.org
-      startDate: 2024-06-26
-      endDate: null
-      description: >
-          Teaching basic programming and mentoring kids in under-resourced
-          communities through hands-on STEM projects. Expanded Living Academy's reach
-          to my school campus where I lead weekly two hour sessions with another
-          volunteer.
-      attachments: []
-
-    - role: Founder
-      org: Sustainable Suds
-      orgLink: https://sustainablesuds.ansht.com
-      startDate: 2024-06-01
-      endDate: null
-      description: >
-          Dissatisfied with amount of soap waste generated by hotels, founded a
-          project to repurpose it. Partnered with four hotels and led two high
-          school students that joined the initiative. Raised money selling soap for
-          Samajbandh India.
-      attachments: []
-
-    - role: Volunteer
-      org: DLRC-DSS Program
-      orgLink: null
-      startDate: 2022-02-01
-      endDate: 2022-04-01
-      description: >
-          Taught NCERT science syllabus online to a batch of 10+ middle school
-          students weekly during government school closures. Planned and guided them
-          through several at-home science experiments to keep students engaged
-          through the lockdown.
-      attachments: []
-
+  - role: Volunteer/Mentor
+    org: Living Academy
+    orgLink: 'https://www.livingacademy.org'
+    startDate: 2024-06-26T00:00:00.000Z
+    endDate: null
+    description: >
+      Teaching basic programming and mentoring kids in under-resourced
+      communities through hands-on STEM projects. Expanded Living Academy's
+      reach to my school campus where I lead weekly two hour sessions with
+      another volunteer.
+    attachments: []
+  - role: Founder
+    org: Sustainable Suds
+    orgLink: 'https://sustainablesuds.ansht.com'
+    startDate: 2024-06-01T00:00:00.000Z
+    endDate: null
+    description: >
+      Dissatisfied with amount of soap waste generated by hotels, founded a
+      project to repurpose it. Partnered with four hotels and led two high
+      school students that joined the initiative. Raised money selling soap for
+      Samajbandh India.
+    attachments: []
+  - role: Volunteer
+    org: DLRC-DSS Program
+    orgLink: null
+    startDate: 2022-02-01T00:00:00.000Z
+    endDate: 2022-04-01T00:00:00.000Z
+    description: >
+      Taught NCERT science syllabus online to a batch of 10+ middle school
+      students weekly during government school closures. Planned and guided them
+      through several at-home science experiments to keep students engaged
+      through the lockdown.
+    attachments: []
 boardExams:
-    - qualification: IGCSE
-      year: 2023
-      subjects:
-          - name: Physics
-            grade: A*
-          - name: Mathematics
-            grade: A*
-          - name: Chemistry
-            grade: A*
-          - name: Geography
-            grade: A*
-          - name: Eng 2nd Lang
-            grade: A*
-
-    - qualification: AS Levels
-      year: 2024
-      subjects:
-          - name: Physics
-            grade: A
-          - name: Mathematics
-            grade: A
-          - name: Chemistry
-            grade: A
-          - name: Computer Science
-            grade: A
-          - name: General English
-            grade: A
-
-    - qualification: A Levels
-      year: 2025
-      subjects:
-          - name: Physics
-            grade: A*
-          - name: Mathematics
-            grade: A*
-          - name: Computer Science
-            grade: A*
-
+  - qualification: IGCSE
+    year: 2023
+    subjects:
+      - name: Physics
+        grade: A*
+      - name: Mathematics
+        grade: A*
+      - name: Chemistry
+        grade: A*
+      - name: Geography
+        grade: A*
+      - name: Eng 2nd Lang
+        grade: A*
+  - qualification: AS Levels
+    year: 2024
+    subjects:
+      - name: Physics
+        grade: A
+      - name: Mathematics
+        grade: A
+      - name: Chemistry
+        grade: A
+      - name: Computer Science
+        grade: A
+      - name: General English
+        grade: A
+  - qualification: A Levels
+    year: 2025
+    subjects:
+      - name: Physics
+        grade: A*
+      - name: Mathematics
+        grade: A*
+      - name: Computer Science
+        grade: A*
 summerPrograms:
-    - name: Lodha Genius Programme
-      link: https://www.lodhageniusprogramme.com
-      startDate: 2023-05-18
-      endDate: 2023-06-17
-      description: >
-          Admitted as one of 100 students across India into a fully funded
-          month-long residential STEM program at Ashoka University. Studied math
-          (number theory, geometry and combinatorics), astronomy and microscopy.
-          Conducted two programming lessons (at microscopy professor's invitation).
-          Made significant contributions and guided my teams in final science
-          projects.
-      attachments:
-          - title: Certificate
-            link: https://drive.google.com/file/d/19BQsXb7ijZcNXOXd_IO9j_yeFDBLmSJq
-          - title: Post
-            link: https://www.instagram.com/p/CyBF2m6JXsf
-
-    - name: Light Touch Programme
-      link: null
-      startDate: 2023-07-01
-      endDate: 2024-05-01
-      description: >
-          Online extension of the Lodha Genius Programme. Continued study of
-          advanced math, astronomy, microscopy and picked up an additional
-          quantitative biology module.
-      attachments: []
-
+  - name: Lodha Genius Programme
+    link: 'https://www.lodhageniusprogramme.com'
+    startDate: 2023-05-18T00:00:00.000Z
+    endDate: 2023-06-17T00:00:00.000Z
+    description: >
+      Admitted as one of 100 students across India into a fully funded
+      month-long residential STEM program at Ashoka University. Studied math
+      (number theory, geometry and combinatorics), astronomy and microscopy.
+      Conducted two programming lessons (at microscopy professor's invitation).
+      Made significant contributions and guided my teams in final science
+      projects.
+    attachments:
+      - title: Certificate
+        link: 'https://drive.google.com/file/d/19BQsXb7ijZcNXOXd_IO9j_yeFDBLmSJq'
+      - title: Post
+        link: 'https://www.instagram.com/p/CyBF2m6JXsf'
+  - name: Light Touch Programme
+    link: null
+    startDate: 2023-07-01T00:00:00.000Z
+    endDate: 2024-05-01T00:00:00.000Z
+    description: >
+      Online extension of the Lodha Genius Programme. Continued study of
+      advanced math, astronomy, microscopy and picked up an additional
+      quantitative biology module.
+    attachments: []
 onlineCourses:
-    - name: "HarvardX: CS50's Introduction to Computer Science"
-      certificate: null
-
-    - name: Google IT Support Professional Certificate
-      certificate: https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR
-
-    - name: System Administration and IT Infrastructure Services
-      certificate: https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR
-
-    - name: Crash Course on Python
-      certificate: https://www.coursera.org/account/accomplishments/certificate/TVZK74AUUDRF
-
-    - name: Using Python to Interact with the Operating System
-      certificate: https://www.coursera.org/account/accomplishments/certificate/TG3RKKWDFF28
-
-    - name: Getting started with Google Workspace Specialization
-      certificate: https://www.coursera.org/account/accomplishments/specialization/certificate/6T9A9KYP8L8X
-
+  - name: 'HarvardX: CS50''s Introduction to Computer Science'
+    certificate: null
+  - name: Google IT Support Professional Certificate
+    certificate: >-
+      https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR
+  - name: System Administration and IT Infrastructure Services
+    certificate: >-
+      https://www.coursera.org/account/accomplishments/specialization/certificate/WEV3PB2VGNNR
+  - name: Crash Course on Python
+    certificate: 'https://www.coursera.org/account/accomplishments/certificate/TVZK74AUUDRF'
+  - name: Using Python to Interact with the Operating System
+    certificate: 'https://www.coursera.org/account/accomplishments/certificate/TG3RKKWDFF28'
+  # - name: Getting started with Google Workspace Specialization
+    # certificate: >-
+      # https://www.coursera.org/account/accomplishments/specialization/certificate/6T9A9KYP8L8X
 extracurriculars:
-    - name: Co-Founded HackDLRC
-      link: https://hack.dlrc.in/info
-      startDate: 2023-11-01
-      endDate: null
-      description: >
-          Launched a coding competition with a friend. Developed a platform for the
-          competition in React. Reached out to sponsors, raising $14000 worth of
-          awards. Designed posters and messages to promote the event to schools and
-          communities. Authored coding challenges. Organized an award ceremony.
-          Recruited and now mentoring 3 students to take lead for future events.
-      attachments: []
-
-    - name: Co-Led School's CS-Club
-      link: null
-      startDate: 2022-06-01
-      endDate: 2023-02-01
-      description: >
-          Organized classes 2x/wk. Taught computer fundamentals, Python basics,
-          microprocessors and game development. Culminated each topic organizing a
-          hands-on group project.
-      attachments: []
-
-    - name: Ultimate Frisbee
-      link: null
-      startDate: 2023-07-01
-      endDate: 2023-11-01
-      description: >
-          Member of school's ultimate frisbee team. Participated in weekly
-          practices. Competed in the West Regionals National School Ultimate
-          Championship, securing 3rd place, awarded MVP for one of the matches.
-      attachments: []
-
+  - name: Co-Founded HackDLRC
+    link: 'https://hack.dlrc.in/info'
+    startDate: 2023-11-01T00:00:00.000Z
+    endDate: null
+    description: >
+      Launched a coding competition with a friend. Developed a platform for the
+      competition in React. Reached out to sponsors, raising $14000 worth of
+      awards. Designed posters and messages to promote the event to schools and
+      communities. Authored coding challenges. Organized an award ceremony.
+      Recruited and now mentoring 3 students to take lead for future events.
+    attachments: []
+  - name: Co-Led School's CS-Club
+    link: null
+    startDate: 2022-06-01T00:00:00.000Z
+    endDate: 2023-02-01T00:00:00.000Z
+    description: >
+      Organized classes 2x/wk. Taught computer fundamentals, Python basics,
+      microprocessors and game development. Culminated each topic organizing a
+      hands-on group project.
+    attachments: []
+  - name: Ultimate Frisbee
+    link: null
+    startDate: 2023-07-01T00:00:00.000Z
+    endDate: 2023-11-01T00:00:00.000Z
+    description: >
+      Member of school's ultimate frisbee team. Participated in weekly
+      practices. Competed in the West Regionals National School Ultimate
+      Championship, securing 3rd place, awarded MVP for one of the matches.
+    attachments: []
 competitions:
-    - name: National School Ultimate Championship
-      certificate: https://drive.google.com/file/d/1-YnX3m89M2SPnqGH226EmcE7CeSox8Qj
-
-    - name: CS50x Puzzle Day 2024
-      certificate: https://cs50.harvard.edu/certificates/c5bdea6f-5ed8-47b6-b996-e57ed14f995
-
-    - name: CS50x Puzzle Day 2023
-      certificate: https://cs50.harvard.edu/certificates/2bbc0ffc-e04f-4cf5-8fbc-e86cebfe4b63
-
-    - name: Google Code Jam 2023
-      certificate: https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC
+  - name: National School Ultimate Championship
+    certificate: 'https://drive.google.com/file/d/1-YnX3m89M2SPnqGH226EmcE7CeSox8Qj'
+  - name: CS50x Puzzle Day 2024
+    certificate: 'https://cs50.harvard.edu/certificates/c5bdea6f-5ed8-47b6-b996-e57ed14f995'
+  - name: CS50x Puzzle Day 2023
+    certificate: 'https://cs50.harvard.edu/certificates/2bbc0ffc-e04f-4cf5-8fbc-e86cebfe4b63'
+  - name: Google Code Jam 2023
+    certificate: 'https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC'

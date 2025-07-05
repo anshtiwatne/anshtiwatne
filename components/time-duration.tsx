@@ -18,7 +18,7 @@ export default function TimeDuration({
 	endDate: Date | null
 }) {
 	return (
-		<span className="sm:block hidden">
+		<span className="hidden sm:block">
 			{getDurationString(startDate, endDate)}
 		</span>
 	)

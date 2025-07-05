@@ -29,7 +29,9 @@ export default function RootLayout({
 			<Script
 				id="JSON-LD"
 				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(personSchema),
+				}}
 			/>
 		</html>
 	)

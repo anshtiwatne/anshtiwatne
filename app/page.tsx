@@ -25,7 +25,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'resume' = 'website'
+const DISPLAY_MODE: 'website' | 'resume' = 'resume'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -44,7 +44,7 @@ function Header() {
 			<Link
 				className="text-[#52525B] dark:text-[#D4D4D8]"
 				color="foreground"
-				href="mailto:hello@ansht.com"
+				href="mailto:ansh.tiwatne@gmail.com"
 			>
 				📧 hello@ansht.com
 			</Link>
@@ -157,8 +157,9 @@ export default async function Home() {
 				Software Developer at{' '}
 				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
 				and Computer Science Teacher at{' '}
-				<Link href="https://dlrc.in">DLRC</Link>. I primarily work with
-				Python, TypeScript, and React, specializing in web development.
+				<Link href="https://www.dlrc.in/team/ansh-tiwatne">DLRC</Link>.
+				I primarily work with Python, TypeScript, and React,
+				specializing in web development.
 			</p>
 
 			<Section title="⚒️ PROJECTS">

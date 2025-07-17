@@ -11,29 +11,29 @@
 		"format": "prettier --write ."
 	},
 	"dependencies": {
-		"@fortawesome/fontawesome-svg-core": "^6.7.2",
-		"@fortawesome/free-brands-svg-icons": "^6.7.2",
-		"@fortawesome/free-regular-svg-icons": "^6.7.2",
-		"@fortawesome/free-solid-svg-icons": "^6.7.2",
-		"@fortawesome/react-fontawesome": "^0.2.2",
-		"babel-plugin-react-compiler": "^19.1.0-rc.1",
-		"next": "^15.3.2",
-		"next-themes": "^0.4.6",
-		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
-		"yaml": "^2.7.1"
+		"@fortawesome/fontawesome-svg-core": "latest",
+		"@fortawesome/free-brands-svg-icons": "latest",
+		"@fortawesome/free-regular-svg-icons": "latest",
+		"@fortawesome/free-solid-svg-icons": "latest",
+		"@fortawesome/react-fontawesome": "latest",
+		"next": "latest",
+		"next-themes": "latest",
+		"react": "latest",
+		"react-dom": "latest"
 	},
 	"devDependencies": {
-		"@eslint/eslintrc": "^3",
-		"@tailwindcss/postcss": "^4",
-		"@types/node": "^24.0.10",
-		"@types/react": "^19",
-		"@types/react-dom": "^19",
-		"eslint": "^9",
-		"eslint-config-next": "^15.3.2",
-		"prettier": "^3.5.3",
-		"prettier-plugin-tailwindcss": "^0.6.11",
-		"tailwindcss": "^4",
-		"typescript": "^5"
+		"babel-plugin-react-compiler": "latest",
+		"@eslint/eslintrc": "latest",
+		"@tailwindcss/postcss": "latest",
+		"@types/node": "latest",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"eslint": "latest",
+		"eslint-config-next": "latest",
+		"prettier": "latest",
+		"prettier-plugin-tailwindcss": "latest",
+		"tailwindcss": "latest",
+		"typescript": "latest",
+		"yaml": "latest"
 	}
 }

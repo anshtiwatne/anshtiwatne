@@ -37,7 +37,7 @@ projects:
           An efficient Wordle solving algorithm and scraper written in Python using
           Playwright, as a learning project.
 workExperience:
-    - role: Software Engineer
+    - role: Software Developer
       org: NeuraSee
       orgLink: null
       startDate: 2025-06-29
@@ -90,7 +90,7 @@ workExperience:
       attachments:
           - title: Internship Letter
             link: 'https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma'
-internships:
+additionalExperience:
     - role: App Developer & Editor
       org: DLRC News Network
       orgLink: 'https://dlrc.in'

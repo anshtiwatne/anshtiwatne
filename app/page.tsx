@@ -25,7 +25,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'resume' = 'resume'
+const DISPLAY_MODE: 'website' | 'resume' = 'website'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -232,29 +232,29 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="💼 INTERNSHIPS">
+			<Section title="💼 ADDITIONAL EXPERIENCE">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
-					{profileData.internships.map((internship) => (
-						<li key={internship.role}>
+					{profileData.additionalExperience.map((experience) => (
+						<li key={experience.role}>
 							<div className="flex items-center justify-between font-semibold">
 								<span>
-									{internship.role} @{' '}
-									{internship.orgLink ? (
-										<Link href={internship.orgLink}>
-											{internship.org}
+									{experience.role} @{' '}
+									{experience.orgLink ? (
+										<Link href={experience.orgLink}>
+											{experience.org}
 										</Link>
 									) : (
-										internship.org
+										experience.org
 									)}
 								</span>
 								<TimeDuration
-									startDate={internship.startDate}
-									endDate={internship.endDate}
+									startDate={experience.startDate}
+									endDate={experience.endDate}
 								/>
 							</div>
-							<p>{internship.description}</p>
+							<p>{experience.description}</p>
 							<div className="flex items-center gap-4">
-								{internship.attachments.map((attachment) => (
+								{experience.attachments.map((attachment) => (
 									<Link
 										key={attachment.link}
 										className="font-medium"

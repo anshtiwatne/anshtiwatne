@@ -25,7 +25,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'resume' = 'website'
+const DISPLAY_MODE: 'website' | 'resume' = 'resume'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -46,7 +46,7 @@ function Header() {
 				color="foreground"
 				href="mailto:ansh.tiwatne@gmail.com"
 			>
-				📧 hello@ansht.com
+				📧 ansh.tiwatne@gmail.com
 			</Link>
 			<Link
 				className="text-[#52525B] dark:text-[#D4D4D8]"

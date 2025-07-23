@@ -20,6 +20,7 @@ export default function Link({
 	classList.push(
 		'underline-offset-2',
 		'hover:underline',
+		'decoration-1', // underline thickness fix
 		'focus:outline-none',
 		'focus:ring-2',
 		'focus:ring-offset-1',

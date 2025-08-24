@@ -358,7 +358,7 @@ export default async function Home() {
 					{profileData.boardExams.map((exam) => (
 						<div key={exam.qualification}>
 							<p className="font-semibold">
-								{exam.qualification}: {exam.year}
+								{exam.qualification} ({exam.year}<sup>th</sup>)
 							</p>
 							<ul className="list-disc pl-4">
 								{exam.subjects.map((subject) => (

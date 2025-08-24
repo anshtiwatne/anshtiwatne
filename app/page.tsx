@@ -25,7 +25,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'resume' = 'website'
+const DISPLAY_MODE: 'website' | 'resume' = 'resume'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -154,9 +154,7 @@ export default async function Home() {
 				itemProp="description"
 				className={DISPLAY_MODE === 'resume' ? 'ml-1' : 'ml-2'}
 			>
-				Software Developer at{' '}
-				<Link href="https://inspiritvision.com">Inspirit Vision</Link>{' '}
-				and Computer Science Teacher at{' '}
+				Software Developer at NeuraSee and Computer Science Teacher at{' '}
 				<Link href="https://www.dlrc.in/team/ansh-tiwatne">DLRC</Link>.
 				I primarily work with Python, TypeScript, and React,
 				specializing in web development.
@@ -358,7 +356,8 @@ export default async function Home() {
 					{profileData.boardExams.map((exam) => (
 						<div key={exam.qualification}>
 							<p className="font-semibold">
-								{exam.qualification} ({exam.year}<sup>th</sup>)
+								{exam.qualification} ({exam.year}
+								<sup>th</sup>)
 							</p>
 							<ul className="list-disc pl-4">
 								{exam.subjects.map((subject) => (

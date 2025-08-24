@@ -131,9 +131,9 @@ computerLanguages:
     - name: Python
       proficiency: advanced
     - name: JavaScript
-      proficiency: intermediate
+      proficiency: advanced
     - name: TypeScript
-      proficiency: intermediate
+      proficiency: advanced
     - name: Bash
       proficiency: intermediate
     - name: HTML & CSS + Tailwind
@@ -154,9 +154,9 @@ humanLanguages:
     - name: Marathi
       proficiency: native
 skills:
-    - React + Next.js
+    - React + Next.js, Vite
     - Firebase
-    - Linux
+    - Docker
     - Git & GitHub
 communityService:
     - role: Volunteer/Mentor

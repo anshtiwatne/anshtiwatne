@@ -1,6 +1,6 @@
 ## 👋 Hi, I'm Ansh
 
-- Software Developer at [Inspirit Vision](https://inspiritvision.com) and Computer Science Teacher at [DLRC](https://dlrc.in)
+- I'm a student studying CS at [Universität des Saarlandes](https://www.uni-saarland.de/)
 - I primarily work with Python, TypeScript, and React, specializing in web development
 - I'm currently learning Rust 🦀
 

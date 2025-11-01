@@ -51,9 +51,9 @@ function Header() {
 			<Link
 				className="text-[#52525B] dark:text-[#D4D4D8]"
 				color="foreground"
-				href="tel:+919075055300"
+				href="tel:+491634429923"
 			>
-				📞 +91 9075055300
+				📞 +49 163 4429923
 			</Link>
 		</header>
 	) : (
@@ -154,10 +154,13 @@ export default async function Home() {
 				itemProp="description"
 				className={DISPLAY_MODE === 'resume' ? 'ml-1' : 'ml-2'}
 			>
-				Software Developer at NeuraSee and Computer Science Teacher at{' '}
-				<Link href="https://www.dlrc.in/team/ansh-tiwatne">DLRC</Link>.
-				I primarily work with Python, TypeScript, and React,
-				specializing in web development.
+				I am a first-semester B.Sc. Computer Science student at{' '}
+				<Link href="https://uni-saarland.de">
+					Saarland University (Universität des Saarlandes)
+				</Link>
+				. I'm into building software (with some previous work experience
+				as a developer). I also enjoy learning math, exploring open
+				source projects, (and playing ultimate frisbee).
 			</p>
 
 			<Section title="⚒️ PROJECTS">

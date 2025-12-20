@@ -1,8 +1,8 @@
 ## 👋 Hi, I'm Ansh
 
 - I'm a student studying CS at [Universität des Saarlandes](https://www.uni-saarland.de/)
-- I primarily work with Python, TypeScript, and React, specializing in web development
-- I'm currently learning Rust 🦀
+- I've primarily worked with Python, TypeScript, and React, and done a lot of full-stack development
+- I'm currently learning OCaml 🐪
 
 You can learn more about me on [my website](https://ansht.com/)
 

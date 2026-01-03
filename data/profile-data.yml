@@ -39,9 +39,9 @@ projects:
 workExperience:
     - role: Software Developer
       org: NeuraSee
-      orgLink: 2025-10-17
+      orgLink: null
       startDate: 2025-06-29
-      endDate:
+      endDate: 2025-10-17
       description: >
           Developing a web portal for that leverages Magnetic Flux Leakage (MFL)
           data for AI-driven defect detection in Oil & Gas pipelines.

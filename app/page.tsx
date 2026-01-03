@@ -155,9 +155,7 @@ export default async function Home() {
 				className={DISPLAY_MODE === 'resume' ? 'ml-1' : 'ml-2'}
 			>
 				I am a first-semester B.Sc. Computer Science student at{' '}
-				<Link href="https://uni-saarland.de">
-					Saarland University (Universität des Saarlandes)
-				</Link>
+				<Link href="https://uni-saarland.de">Universität des Saarlandes</Link>
 				. I'm into building software (with some previous work experience
 				as a developer). I also enjoy learning math, exploring open
 				source projects, (and playing ultimate frisbee).

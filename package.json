@@ -22,13 +22,13 @@
 		"react-dom": "latest"
 	},
 	"devDependencies": {
-		"babel-plugin-react-compiler": "latest",
 		"@eslint/eslintrc": "latest",
 		"@tailwindcss/postcss": "latest",
 		"@types/node": "latest",
 		"@types/react": "latest",
 		"@types/react-dom": "latest",
-		"eslint": "latest",
+		"babel-plugin-react-compiler": "latest",
+		"eslint": "^10.0.2",
 		"eslint-config-next": "latest",
 		"prettier": "latest",
 		"prettier-plugin-tailwindcss": "latest",

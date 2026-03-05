@@ -4,17 +4,11 @@ projects:
     description: >
       A short form news app (like Inshorts) developed for my school community,
       built in Next.js with a Firebase backend.
-  - name: Prana Daan
-    link: >-
-      https://play.google.com/store/apps/details?id=com.inspiritvision.pranadaan.twa
+  - name: Inspirit Vision Apps
+    link: 'https://play.google.com/store/apps/dev?id=7219571418619438815'
     description: >
-      React app for managing registrations and automating processes for
-      semiannual blood donation drives at Inspirit Vision.
-  - name: Chalo Daudne
-    link: 'https://play.google.com/store/apps/details?id=in.chalodaudne.twa'
-    description: >
-      React app for tracking runners, generating certificates and managing
-      volunteers during biannual community marathons at Inspirit Vision.
+      Several React web/Android apps built with React for some company events
+      and CSR initiatives at Inspirit Vision.
   - name: DLRC Weather
     link: 'https://weather.dlrc.in'
     description: >
@@ -25,7 +19,6 @@ projects:
     description: >
       An efficient Wordle solving algorithm and scraper written in Python using
       Playwright, as a learning project.
-
 workExperience:
   - role: Software Developer
     org: NeuraSee LLP
@@ -44,9 +37,9 @@ workExperience:
     description: >
       Having previously studied the A-level computer science syllabus early in
       high school, started teaching it to a small class of 2 peers interested
-      during 12th grade. I organized classes 4 times a week. After I graduated,
-      my school offered a part-time role (until I leaving for college) to teach
-      the next batch.
+      during 12th grade. Organized classes 4 times a week. After graduation, my
+      school offered a continued part-time role (until leaving for college) to
+      teach the next batch.
     attachments: []
   - role: Software Developer
     org: Inspirit Vision LLP
@@ -86,7 +79,6 @@ workExperience:
     attachments:
       - title: Internship Letter
         link: 'https://drive.google.com/file/d/1FKjtMmf1Aa3tDs8Ffqt41wXlkEHkc8Ma'
-
 additionalExperience:
   - role: App Developer & News Editor
     org: DLRC Foundation
@@ -125,7 +117,6 @@ additionalExperience:
     attachments:
       - title: Letter of Appreciation
         link: 'https://drive.google.com/file/d/1JX8jaBBAUGzmz_7KYx2WYwtAQ5KlpQls'
-
 computerLanguages:
   - name: OCaml
     proficiency: intermediate
@@ -145,7 +136,6 @@ computerLanguages:
     proficiency: beginner
   - name: Prolog
     proficiency: working knowledge
-
 humanLanguages:
   - name: English
     proficiency: native
@@ -155,14 +145,12 @@ humanLanguages:
     proficiency: proficient
   - name: Marathi
     proficiency: native
-
 skills:
   - 'React + Next.js, Vite'
   - Linux
   - Docker
   - Firebase
   - Git & GitHub
-
 communityService:
   - role: Volunteer/Mentor
     org: Living Academy
@@ -177,8 +165,8 @@ communityService:
       campus during vacant hours, leading weekly sessions with another volunteer
       from August 2023 to Jan 2024. During my time between high school and
       college, I additionally volunteered to live on-site for over two months,
-      helping manage operations, look after the students, and keep the place
-      open 24/7.
+      helping manage operations, looking after the students, and keeping the
+      place open 24/7.
     attachments: []
   - role: Founder
     org: Sustainable Suds
@@ -202,7 +190,6 @@ communityService:
       through several at-home science experiments to keep students engaged
       through the lockdown.
     attachments: []
-
 boardExams:
   - qualification: IGCSE
     year: 10
@@ -239,7 +226,6 @@ boardExams:
         grade: A*
       - name: Computer Science
         grade: A*
-
 summerPrograms:
   - name: Lodha Genius Programme
     link: 'https://www.lodhageniusprogramme.com'
@@ -250,8 +236,7 @@ summerPrograms:
       month-long residential STEM program at Ashoka University. Studied math
       (number theory, geometry and combinatorics), astronomy and microscopy.
       Conducted two programming lessons (at microscopy professor's invitation).
-      Made significant contributions and guided my teams in final science
-      projects.
+      Made significant contributions and led my teams in science projects.
     attachments:
       - title: Certificate
         link: 'https://drive.google.com/file/d/19BQsXb7ijZcNXOXd_IO9j_yeFDBLmSJq'
@@ -266,7 +251,6 @@ summerPrograms:
       advanced math, astronomy, microscopy and picked up an additional
       quantitative biology module.
     attachments: []
-
 onlineCourses:
   - name: 'HarvardX: CS50''s Introduction to Computer Science'
     certificate: null
@@ -280,7 +264,6 @@ onlineCourses:
     certificate: 'https://www.coursera.org/account/accomplishments/certificate/TVZK74AUUDRF'
   - name: Using Python to Interact with the Operating System
     certificate: 'https://www.coursera.org/account/accomplishments/certificate/TG3RKKWDFF28'
-
 extracurriculars:
   - name: Co-Founded HackDLRC
     link: 'https://hack.dlrc.in/info'
@@ -311,7 +294,6 @@ extracurriculars:
       practices. Competed in the West Regionals National School Ultimate
       Championship, securing 3rd place.
     attachments: []
-
 competitions:
   - name: National School Ultimate Championship
     certificate: 'https://drive.google.com/file/d/1-YnX3m89M2SPnqGH226EmcE7CeSox8Qj'
@@ -321,7 +303,6 @@ competitions:
     certificate: 'https://cs50.harvard.edu/certificates/2bbc0ffc-e04f-4cf5-8fbc-e86cebfe4b63'
   - name: Google Code Jam 2023
     certificate: 'https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC'
-
 profiles:
   - link: 'https://g.co/kgs/jJKkRNG'
     icon: google

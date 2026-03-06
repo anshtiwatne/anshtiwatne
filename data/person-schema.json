@@ -13,7 +13,7 @@
 		"gender": "Male",
 		"url": "https://ansht.com",
 		"image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Ansh_Tiwatne_LGP.jpg",
-		"description": "Ansh Tiwatne is a Software Developer at Inspirit Vision and a Computer Science Teacher at DLRC. He primarily works with Python, TypeScript, and React, specializing in web development.",
+		"description": "Ansh Tiwatne is a student at Saarland University",
 		"sameAs": [
 			"https://github.com/anshtiwatne",
 			"https://x.com/anshtiwatne",
@@ -24,11 +24,6 @@
 			"https://ansht.com",
 			"https://www.wikidata.org/wiki/Q133865037",
 			"https://commons.wikimedia.org/wiki/Category:Ansh_Tiwatne"
-		],
-		"jobTitle": "Software Developer",
-		"worksFor": {
-			"@type": "Organization",
-			"name": "Inspirit Vision"
-		}
+		]
 	}
 }

@@ -1,3 +1,11 @@
+personalInfo:
+  name: Ansh Shekhar Tiwatne
+  email: ansh.tiwatne@gmail.com
+  phone: '+49 163 4429923'
+  website: 'https://ansht.com'
+  about: >
+    I am a B.Sc. Computer Science student at Saarland University. I like building software (with some previous experience as a developer). I also enjoy learning math and playing ultimate frisbee. 
+
 projects:
   - name: DLRC Daily
     link: 'https://daily.dlrc.in'
@@ -7,8 +15,8 @@ projects:
   - name: Inspirit Vision Apps
     link: 'https://play.google.com/store/apps/dev?id=7219571418619438815'
     description: >
-      Several web/Android apps built with React for some company events and CSR
-      initiatives at Inspirit Vision.
+      Several web/Android apps built with React for events and CSR
+      initiatives at a company I worked with.
   - name: DLRC Weather
     link: 'https://weather.dlrc.in'
     description: >
@@ -18,7 +26,7 @@ projects:
     link: 'https://ansht.stck.me/post/16674/Hello-Wordle'
     description: >
       An efficient Wordle solving algorithm and scraper written in Python using
-      Playwright, as a learning project.
+      Playwright, as a learning project several years ago.
 workExperience:
   - role: Software Developer
     org: NeuraSee LLP
@@ -39,7 +47,7 @@ workExperience:
       high school, started teaching it to a small class of 2 peers interested
       during 12th grade. Organized classes 4 times a week. After graduation, my
       school offered a continued part-time role (until leaving for college) to
-      teach the next batch.
+      teach the next grade.
     attachments: []
   - role: Software Developer
     org: Inspirit Vision LLP
@@ -135,22 +143,23 @@ computerLanguages:
   - name: SQL
     proficiency: beginner
   - name: Prolog
-    proficiency: working knowledge
+    proficiency: beginner
 humanLanguages:
   - name: English
     proficiency: native
   - name: German
-    proficiency: beginner (studying)
+    proficiency: A1 (studying)
   - name: Hindi
     proficiency: proficient
   - name: Marathi
     proficiency: native
 skills:
-  - 'React + Next.js, Vite'
+  - React + Next.js, Vite
+  - AWS EC2
   - Linux
   - Docker
   - Firebase
-  - Git & GitHub
+  - Git & GitHub, Bitbucket, GitLab
 communityService:
   - role: Volunteer/Mentor
     org: Living Academy
@@ -190,8 +199,9 @@ communityService:
       through several at-home science experiments to keep students engaged
       through the lockdown.
     attachments: []
-boardExams:
+secondarySchoolQualifications:
   - qualification: IGCSE
+    gradeScale: A* to G
     year: 10
     subjects:
       - name: Physics
@@ -202,9 +212,10 @@ boardExams:
         grade: A*
       - name: Geography
         grade: A*
-      - name: Eng 2nd Lang
+      - name: English
         grade: A*
   - qualification: AS Levels
+    gradeScale: A to E
     year: 11
     subjects:
       - name: Physics
@@ -218,6 +229,7 @@ boardExams:
       - name: General English
         grade: A
   - qualification: A Levels
+    gradeScale: A* to E
     year: 12
     subjects:
       - name: Physics
@@ -234,9 +246,7 @@ summerPrograms:
     description: >
       Admitted as one of 100 students across India into a fully funded
       month-long residential STEM program at Ashoka University. Studied math
-      (number theory, geometry and combinatorics), astronomy and microscopy.
-      Conducted two programming lessons (at microscopy professor's invitation).
-      Made significant contributions and led my teams in science projects.
+      (number theory, geometry and combinatorics), astronomy and microscopy. Worked on two science projects.
     attachments:
       - title: Certificate
         link: 'https://drive.google.com/file/d/19BQsXb7ijZcNXOXd_IO9j_yeFDBLmSJq'
@@ -288,11 +298,11 @@ extracurriculars:
   - name: Ultimate Frisbee
     link: null
     startDate: 2023-07-01T00:00:00.000Z
-    endDate: 2023-11-01T00:00:00.000Z
+    # endDate: 2023-11-01T00:00:00.000Z
+    endDate: null
     description: >
-      Member of school's ultimate frisbee team. Participated in weekly
-      practices. Competed in the West Regionals National School Ultimate
-      Championship, securing 3rd place.
+      I enjoy playing Ultimate Frisbee in my free time. Started playing the sport in 2022, in high school. Participated
+      and placed third (team) in the National School Ultimate Championship in 2023. Continued playing at university during weekly practices throughout my first semester.
     attachments: []
 competitions:
   - name: National School Ultimate Championship
@@ -301,8 +311,8 @@ competitions:
     certificate: 'https://cs50.harvard.edu/certificates/c5bdea6f-5ed8-47b6-b996-e57ed14f995'
   - name: CS50x Puzzle Day 2023
     certificate: 'https://cs50.harvard.edu/certificates/2bbc0ffc-e04f-4cf5-8fbc-e86cebfe4b63'
-  - name: Google Code Jam 2023
-    certificate: 'https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC'
+  # - name: Google Code Jam 2023
+    # certificate: 'https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC'
 profiles:
   - link: 'https://g.co/kgs/jJKkRNG'
     icon: google

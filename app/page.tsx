@@ -1,5 +1,6 @@
 // eslint-disable @typescript-eslint/no-explicit-any
 
+// @ts-expect-error
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import fs from 'fs/promises'
@@ -24,7 +25,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'resume' = 'website'
+const DISPLAY_MODE: 'website' | 'cv' = 'website'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -37,22 +38,22 @@ async function getProfileData(): Promise<unknown> {
 	return data
 }
 
-function Header() {
-	return DISPLAY_MODE === 'resume' ? (
+function Header({ profileData }: { profileData: any }) {
+	return DISPLAY_MODE === 'cv' ? (
 		<header className="flex items-center justify-between text-lg text-[#52525B] dark:text-[#D4D4D8]">
 			<Link
 				className="text-[#52525B] dark:text-[#D4D4D8]"
 				color="foreground"
-				href="mailto:ansh.tiwatne@gmail.com"
+				href={`mailto:${profileData.personalInfo.email}`}
 			>
-				📧 ansh.tiwatne@gmail.com
+				📧 {profileData.personalInfo.email}
 			</Link>
 			<Link
 				className="text-[#52525B] dark:text-[#D4D4D8]"
 				color="foreground"
-				href="tel:+491634429923"
+				href={`tel:${profileData.personalInfo.phone.replace(/\s+/g, '')}`}
 			>
-				📞 +49 163 4429923
+				📞 {profileData.personalInfo.phone}
 			</Link>
 		</header>
 	) : (
@@ -62,13 +63,13 @@ function Header() {
 				className="font-bold tracking-wide"
 				color="foreground"
 			>
-				ANSH TIWATNE
+				{profileData.personalInfo.name}
 			</Link>
 			<nav data-nosnippet className="flex items-center gap-2 font-medium">
 				<Link
 					color="foreground"
 					className="text-[#52525B] dark:text-[#D4D4D8]"
-					href="mailto:ansh.tiwatne@gmail.com"
+					href={`mailto:${profileData.personalInfo.email}`}
 				>
 					📧 Contact
 				</Link>
@@ -82,19 +83,19 @@ function Header() {
 function Footer({ profileData }: { profileData: any }) {
 	return (
 		<footer className="flex items-center justify-between pt-10">
-			{DISPLAY_MODE === 'resume' ? (
+			{DISPLAY_MODE === 'cv' ? (
 				<Link
 					className="flex items-center gap-2 text-[#52525B] dark:text-[#D4D4D8]"
 					color="foreground"
-					href="https://ansht.com"
+					href={profileData.personalInfo.website}
 				>
 					<FontAwesomeIcon icon={faGlobe} size="lg" />
-					<span>ansht.com</span>
+					<span>{profileData.personalInfo.website.replace(/^https?:\/\//, '')}</span>
 				</Link>
 			) : (
 				<div className="flex items-center gap-2 text-[#52525B] dark:text-[#D4D4D8]">
 					<FontAwesomeIcon icon={faCopyright} />
-					<span>Ansh Tiwatne</span>
+					<span>{profileData.personalInfo.name}</span>
 				</div>
 			)}
 			<div className="flex items-center gap-4">
@@ -118,14 +119,16 @@ function Footer({ profileData }: { profileData: any }) {
 
 function Section({
 	title,
+	emoji,
 	children,
 }: {
 	title: string
+	emoji?: string
 	children: React.ReactNode
 }) {
 	return (
 		<div className="flex flex-col gap-2">
-			<p className="text-lg font-bold">{title}</p>
+			<p className="text-lg font-bold">{(DISPLAY_MODE != 'cv') && emoji} {title}</p>
 			<div className="ml-2 flex flex-col gap-2">{children}</div>
 		</div>
 	)
@@ -140,31 +143,25 @@ export default async function Home() {
 			itemType="https://schema.org/Person"
 			className={`${DISPLAY_MODE === 'website' ? 'leading-relaxed' : ''} mx-auto flex max-w-3xl flex-col gap-8 p-4 tracking-wide text-[#27272A] dark:text-[#F4F4F5]`}
 		>
-			<Header />
+			<Header profileData={profileData} />
 
 			<p data-nosnippet className="mb-[-1rem] pt-4 text-4xl font-bold">
-				{DISPLAY_MODE === 'resume' ? (
-					<span className="ml-1">Ansh Tiwatne</span>
+				{DISPLAY_MODE === 'cv' ? (
+					<span className="ml-1">{profileData.personalInfo.name}</span>
 				) : (
-					<span className="sm:ml-[-0.5rem]">👋 Hi, I'm Ansh</span>
+					<span className="sm:ml-[-0.5rem]">👋 Hi, I'm {profileData.personalInfo.name.split(' ')[0]}</span>
 				)}
 			</p>
 			<p
 				itemProp="description"
-				className={DISPLAY_MODE === 'resume' ? 'ml-1' : 'ml-2'}
+				className={DISPLAY_MODE === 'cv' ? 'ml-1' : 'ml-2'}
 			>
-				I am a first-semester B.Sc. Computer Science student at{' '}
-				<Link href="https://uni-saarland.de">
-					Universität des Saarlandes
-				</Link>
-				. I'm into building software (with some previous work experience
-				as a developer). I also enjoy learning math, exploring open
-				source projects, (and playing ultimate frisbee).
+				{profileData.personalInfo.about}
 			</p>
 
-			<Section title="⚒️ PROJECTS">
+			<Section title="PROJECTS" emoji="🛠️">
 				<p>
-					I'm constantly working on new projects which are usually
+					There are several projects I've worked on which are usually
 					open-sourced on{' '}
 					<Link href="https://github.com/anshtiwatne">GitHub</Link>
 					—here are a few favorites:
@@ -189,7 +186,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="👨‍💻 WORK EXPERIENCE">
+			<Section title="WORK EXPERIENCE" emoji="🧑‍💻">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
 					{profileData.workExperience.map((experience) => (
 						<li key={experience.org}>
@@ -232,7 +229,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="💼 ADDITIONAL EXPERIENCE">
+			<Section title="ADDITIONAL EXPERIENCE" emoji="💼">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
 					{profileData.additionalExperience.map((experience) => (
 						<li key={experience.role}>
@@ -276,7 +273,7 @@ export default async function Home() {
 			</Section>
 
 			<div className="flex flex-col justify-between gap-8 sm:flex-row">
-				<Section title="🖥️ LANGUAGES (computer)">
+				<Section title="LANGUAGES (computer)" emoji="🖥️">
 					<ul className="list-disc pl-4">
 						{profileData.computerLanguages.map((language) => (
 							<li key={language.name}>
@@ -286,7 +283,7 @@ export default async function Home() {
 					</ul>
 				</Section>
 				<div className="flex flex-col gap-8 sm:gap-4">
-					<Section title="🌐 LANGUAGES (human)">
+					<Section title="LANGUAGES (human)" emoji="🌐">
 						<ul className="list-disc pl-4">
 							{profileData.humanLanguages.map((language) => (
 								<li key={language.name}>
@@ -295,7 +292,7 @@ export default async function Home() {
 							))}
 						</ul>
 					</Section>
-					<Section title="🤹 SKILLS">
+					<Section title="SKILLS" emoji="🤹">
 						<ul className="list-disc pl-4">
 							{profileData.skills.map((skill) => (
 								<li key={skill}>{skill}</li>
@@ -305,7 +302,7 @@ export default async function Home() {
 				</div>
 			</div>
 
-			<Section title="🤝 COMMUNITY SERVICE">
+			<Section title="COMMUNITY SERVICE" emoji="🤝">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
 					{profileData.communityService.map((service) => (
 						<li key={service.role}>
@@ -353,18 +350,41 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="📝 EDUCATION & TESTING">
+			<Section title="EDUCATION & TESTING" emoji="📝">
+				<div className="flex items-center justify-between font-semibold">
+					<span>
+						B.Sc. Computer Science (English), Saarland University
+					</span>
+					<TimeDuration
+						startDate={new Date("2025-10-01")}
+						endDate={null}
+					/>
+				</div>
+				<p>Current GPA: <span className="font-semibold">1.0</span> (German scale)</p>
+				<div className="flex items-center gap-4">
+					<Link
+						className="font-medium"
+						href="https://drive.google.com/file/d/1HopBg34XnCKzYywrU0n2J2VyEDdoBLT5"
+						target="_blank"
+					>
+						Transcript{' '}
+						<FontAwesomeIcon
+							className="ml-1"
+							icon={faArrowUpRightFromSquare}
+							size="xs"
+						/>
+					</Link>
+				</div>
 				<div className="flex flex-col justify-between gap-2 sm:flex-row">
-					{profileData.boardExams.map((exam) => (
+					{profileData.secondarySchoolQualifications.map((exam) => (
 						<div key={exam.qualification}>
 							<p className="font-semibold">
-								{exam.qualification} ({exam.year}
-								<sup>th</sup>)
+								{exam.qualification} ({exam.gradeScale})
 							</p>
 							<ul className="list-disc pl-4">
 								{exam.subjects.map((subject) => (
 									<li key={subject.name}>
-										{subject.name}: {subject.grade}
+										{subject.name}: <span className="font-semibold">{subject.grade}</span>
 									</li>
 								))}
 							</ul>
@@ -373,18 +393,18 @@ export default async function Home() {
 				</div>
 				<div className="flex flex-col justify-between pt-1 sm:flex-row">
 					<span>
-						<span className="font-semibold">SAT</span> (superscore):
-						1530/1600
+						<span className="font-semibold">SAT</span> (superscore):{' '}
+						<span className="font-semibold">1530</span>/1600
 					</span>
-					<span>Reading & Writing: 740, Math: 790</span>
+					<span>Reading & Writing: <span className="font-semibold">740</span>, Math: <span className="font-semibold">790</span></span>
 				</div>
 				<div>
 					<span className="font-semibold">IELTS</span>: overall band
-					score 8
+					score <span className="font-semibold">8</span>
 				</div>
 			</Section>
 
-			<Section title="🌞 SUMMER PROGRAMS">
+			<Section title="SUMMER PROGRAMS" emoji="🌞">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
 					{profileData.summerPrograms.map((program) => (
 						<li key={program.name}>
@@ -424,7 +444,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="📚 ONLINE COURSES">
+			<Section title="ONLINE COURSES" emoji="📚">
 				<ul className="list-disc pl-4">
 					{profileData.onlineCourses.map((course) => (
 						<li key={course.name}>
@@ -440,7 +460,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="⚽ EXTRACURRICULARS">
+			<Section title="EXTRACURRICULARS" emoji="⚽">
 				<ul className="flex list-disc flex-col gap-2 pl-4">
 					{profileData.extracurriculars.map((extracurricular) => (
 						<li key={extracurricular.name}>
@@ -485,7 +505,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="🏆 COMPETITIONS">
+			<Section title="COMPETITIONS" emoji="🏆">
 				<ul className="list-disc pl-4">
 					{profileData.competitions.map((competition) => (
 						<li key={competition.name}>

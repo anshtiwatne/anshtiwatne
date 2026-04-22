@@ -2,7 +2,7 @@
 
 - I'm a student studying CS at [Universität des Saarlandes](https://www.uni-saarland.de/)
 - I've primarily worked with Python, TypeScript, and React, and done a lot of full-stack development
-- I'm currently learning OCaml 🐪
+- I'm currently learning Haskell and RISC-V
 
 You can learn more about me on [my website](https://ansht.com/)
 

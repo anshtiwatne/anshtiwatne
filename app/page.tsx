@@ -24,7 +24,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'cv' = 'cv'
+const DISPLAY_MODE: 'website' | 'cv' = 'website'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)

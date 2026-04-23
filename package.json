@@ -28,7 +28,7 @@
 		"@types/react": "latest",
 		"@types/react-dom": "latest",
 		"babel-plugin-react-compiler": "latest",
-		"eslint": "^10.0.2",
+		"eslint": "latest",
 		"eslint-config-next": "latest",
 		"prettier": "latest",
 		"prettier-plugin-tailwindcss": "latest",

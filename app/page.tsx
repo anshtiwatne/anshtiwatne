@@ -1,6 +1,5 @@
 // eslint-disable @typescript-eslint/no-explicit-any
 
-// @ts-expect-error
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import fs from 'fs/promises'
@@ -25,7 +24,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'cv' = 'website'
+const DISPLAY_MODE: 'website' | 'cv' = 'cv'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -351,29 +350,32 @@ export default async function Home() {
 			</Section>
 
 			<Section title="EDUCATION & TESTING" emoji="📝">
-				<div className="flex items-center justify-between font-semibold">
-					<span>
-						B.Sc. Computer Science (English), Saarland University
-					</span>
-					<TimeDuration
-						startDate={new Date("2025-10-01")}
-						endDate={null}
-					/>
-				</div>
-				<p>Current GPA: <span className="font-semibold">1.0</span> (German scale)</p>
-				<div className="flex items-center gap-4">
-					<Link
-						className="font-medium"
-						href="https://drive.google.com/file/d/1HopBg34XnCKzYywrU0n2J2VyEDdoBLT5"
-						target="_blank"
-					>
-						Transcript{' '}
-						<FontAwesomeIcon
-							className="ml-1"
-							icon={faArrowUpRightFromSquare}
-							size="xs"
+				{/* TODO: structure this section better and move degree data to profile-data.yml */}
+				<div>
+					<div className="flex items-center justify-between font-semibold">
+						<span>
+							B.Sc. Computer Science (English), Saarland University
+						</span>
+						<TimeDuration
+							startDate={new Date("2025-10-01")}
+							endDate={null}
 						/>
-					</Link>
+					</div>
+					<p>Current GPA: <span className="font-semibold">1.0</span> (German scale)</p>
+					<div className="flex items-center gap-4">
+						<Link
+							className="font-medium"
+							href="https://drive.google.com/file/d/1HopBg34XnCKzYywrU0n2J2VyEDdoBLT5"
+							target="_blank"
+						>
+							Transcript{' '}
+							<FontAwesomeIcon
+								className="ml-1"
+								icon={faArrowUpRightFromSquare}
+								size="xs"
+							/>
+						</Link>
+					</div>
 				</div>
 				<div className="flex flex-col justify-between gap-2 sm:flex-row">
 					{profileData.secondarySchoolQualifications.map((exam) => (

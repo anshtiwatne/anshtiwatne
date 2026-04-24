@@ -162,7 +162,7 @@ export default async function Home() {
 				<p>
 					There are several projects I've worked on which are usually
 					open-sourced on{' '}
-					<Link href="https://github.com/anshtiwatne">GitHub</Link>
+					<Link href="https://github.com/anshtiwatne">my GitHub</Link>
 					—here are a few favorites:
 				</p>
 				<ul className="flex list-disc flex-col gap-2 pl-4">

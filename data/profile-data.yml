@@ -4,9 +4,10 @@ personalInfo:
   phone: "+49 163 4429923"
   website: "https://ansht.com"
   about: >
-    I am a B.Sc. Computer Science student at Saarland University. I like
-    building software (with some previous experience as a developer). I also
-    enjoy learning math and playing ultimate frisbee. 
+    I'm a B.Sc. Computer Science student at Saarland University with experience
+    in software development. I am passionate about building software,
+    exploring  mathematics, and am also deeply committed to volunteering. I
+    enjoy playing Ultimate Frisbee in my free time.
 
 projects:
   - name: DLRC Daily
@@ -170,14 +171,14 @@ communityService:
     endDate: 2025-10-01
     description: >
       Living Academy is an educational space for children in one of my city's
-      most under-resourced areas. I taught basic science, programming, and
-      mentored students in building hands-on STEM projects. Also seeing a
-      similar need near my school, I created a parallel learning space using our
-      campus during vacant hours, leading weekly sessions with another volunteer
-      from August 2023 to Jan 2024. During my time between high school and
-      college, I additionally volunteered to live on-site for over two months,
-      helping manage operations, looking after the students, and keeping the
-      place open 24/7.
+      most under-resourced areas where I taught basic science, programming, and
+      mentored students in building several hands-on STEM projects. Also seeing
+      a similar need near my school, I created a parallel learning space using
+      our campus during vacant hours, leading weekly sessions with another
+      volunteer from August 2023 to Jan 2024. During my time between high school
+      and college, I additionally volunteered to live on-site for over two
+      months, helping manage operations, looking after the students, and keeping
+      the place open 24/7.
     attachments: []
   - role: Founder
     org: Sustainable Suds

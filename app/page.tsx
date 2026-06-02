@@ -24,7 +24,7 @@ import TimeDuration from '@/components/time-duration'
 config.autoAddCss = false
 library.add(fab)
 
-const DISPLAY_MODE: 'website' | 'cv' = 'website'
+const DISPLAY_MODE: 'website' | 'cv' = 'cv'
 
 async function getProfileData(): Promise<unknown> {
 	const __filename = fileURLToPath(import.meta.url)
@@ -362,6 +362,8 @@ export default async function Home() {
 						/>
 					</div>
 					<p>Current GPA: <span className="font-semibold">1.0</span> (German scale)</p>
+					<p>Member of the Computer Science Honors Program</p>
+					<p></p>
 					<div className="flex items-center gap-4">
 						<Link
 							className="font-medium"
@@ -369,6 +371,18 @@ export default async function Home() {
 							target="_blank"
 						>
 							Transcript{' '}
+							<FontAwesomeIcon
+								className="ml-1"
+								icon={faArrowUpRightFromSquare}
+								size="xs"
+							/>
+						</Link>
+												<Link
+							className="font-medium"
+							href="https://drive.google.com/file/d/1Rd2eB3Q4NmDR5KzJ1bZbxFIiPdSFkBgY"
+							target="_blank"
+						>
+							Honors Admission Certificate{' '}
 							<FontAwesomeIcon
 								className="ml-1"
 								icon={faArrowUpRightFromSquare}
@@ -446,7 +460,7 @@ export default async function Home() {
 				</ul>
 			</Section>
 
-			<Section title="ONLINE COURSES" emoji="📚">
+			{/* <Section title="ONLINE COURSES" emoji="📚">
 				<ul className="list-disc pl-4">
 					{profileData.onlineCourses.map((course) => (
 						<li key={course.name}>
@@ -460,7 +474,7 @@ export default async function Home() {
 						</li>
 					))}
 				</ul>
-			</Section>
+			</Section> */}
 
 			<Section title="EXTRACURRICULARS" emoji="⚽">
 				<ul className="flex list-disc flex-col gap-2 pl-4">

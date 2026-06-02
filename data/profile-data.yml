@@ -4,10 +4,10 @@ personalInfo:
   phone: "+49 163 4429923"
   website: "https://ansht.com"
   about: >
-    I'm a B.Sc. Computer Science student at Saarland University with experience
-    in software development. I am passionate about building software,
-    exploring  mathematics, and am also deeply committed to volunteering. I
-    enjoy playing Ultimate Frisbee in my free time.
+    I'm a B.Sc. Computer Science student at Saarland University.
+    I am passionate about building software, exploring  mathematics,
+    and am also deeply committed to volunteering.
+    I enjoy playing Ultimate Frisbee in my free time.
 
 projects:
   - name: DLRC Daily
@@ -315,7 +315,8 @@ competitions:
   - name: CS50x Puzzle Day 2024
     certificate: "https://cs50.harvard.edu/certificates/c5bdea6f-5ed8-47b6-b996-e57ed14f995"
   - name: CS50x Puzzle Day 2023
-    certificate: "https://cs50.harvard.edu/certificates/2bbc0ffc-e04f-4cf5-8fbc-e86\
+    certificate:
+      "https://cs50.harvard.edu/certificates/2bbc0ffc-e04f-4cf5-8fbc-e86\
       cebfe4b63"
     # - name: Google Code Jam 2023
     # certificate: 'https://drive.google.com/file/d/199bWai1cIFngA4zjRUP-CpYb--NpynOC'
